@@ -6,6 +6,7 @@
   top: 0px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-color: #364d47ea;
+  /* padding-top: 0.5rem; */
 }
 
 .App {
@@ -20,7 +21,9 @@
   /* border-radius: ; */
 
   /* height: 7rem; */
-  /* margin-left: -1rem; */
+
+  margin-left: -1.5rem;
+  /* margin-top: -.3rem; */
 
   float: left;
 }
@@ -59,7 +62,7 @@
 
 .tab:hover {
   color: rgb(255, 198, 124);
-  background-color: #699186af;
+  background-color: #69918671;
   cursor: pointer;
 }
 

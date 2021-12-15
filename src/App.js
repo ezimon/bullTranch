@@ -37,7 +37,7 @@ function App() {
     case "apiculture":
       component = apiculture;
       break;
-    case "hydropnic":
+    case "hydroponic":
       component = hydroponic;
       break;
     case "agriculture":
@@ -55,7 +55,7 @@ function App() {
     <div className="App">
       <Header setRoute={setRoute} />
       {component}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

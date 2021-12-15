@@ -8,7 +8,7 @@ export const Header = ({ setRoute }) => {
         src={mainlogo}
         onClick={() => setRoute("home")}
         alt="Bull T Ranch"
-        className="headerLogo"
+        className="headerLogo grow"
       />
       <ul className="tabs">
         <b>

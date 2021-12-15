@@ -5,19 +5,22 @@ import pic3 from "../assets/bigMenu/pic3.png";
 import pic4 from "../assets/bigMenu/pic4.png";
 // import mainlogo from "../assets/logo.png";
 
-export const BigMenu = ({ setRoute}) => {
+export const BigMenu = ({ setRoute }) => {
   return (
     <div>
       {/* <img src={mainlogo} alt="Bull T Ranch" className="menuLogo" /> */}
       <div className="menu">
-        <button onClick={() => setRoute("hydroponic")}></button>
+        <button onClick={() => setRoute("apiculture")}>apiculture</button>
+        <button onClick={() => setRoute("hydroponic")}>hydroponic</button>
+        <button onClick={() => setRoute("agriculture")}>agriculture</button>
+        <button onClick={() => setRoute("livestock")}>livestock</button>
       </div>
     </div>
   );
 };
 
-
-{/* <div className="menuImg">
+{
+  /* <div className="menuImg">
 <img src={pic1} alt="" />
 <h1 className="menuTitle">Hydroponic System</h1>
 </div>
@@ -32,4 +35,5 @@ export const BigMenu = ({ setRoute}) => {
 <div className="menuImg">
 <img src={pic4} alt="" />
 <h1 className="menuTitle">Original livestock</h1>
-</div> */}
+</div> */
+}

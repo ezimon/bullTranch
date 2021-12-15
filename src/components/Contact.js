@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
-import Button from "@mui/material/Button";
 
 export const Contact = () => {
   const form = useRef();
@@ -27,7 +26,6 @@ export const Contact = () => {
 
   return (
     <div className="component tc">
-      <Button variant="contained">Hello World</Button>
       <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
         <br />
