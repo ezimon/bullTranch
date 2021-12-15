@@ -5,12 +5,12 @@ import pic3 from "../assets/bigMenu/pic3.png";
 import pic4 from "../assets/bigMenu/pic4.png";
 // import mainlogo from "../assets/logo.png";
 
-export const BigMenu = () => {
+export const BigMenu = ({ setRoute}) => {
   return (
     <div>
       {/* <img src={mainlogo} alt="Bull T Ranch" className="menuLogo" /> */}
       <div className="menu">
-
+        <button onClick={() => setRoute("hydroponic")}></button>
       </div>
     </div>
   );

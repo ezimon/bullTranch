@@ -5,15 +5,19 @@
   right: 0%;
   top: 0px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  background-color: #53796f;
+  background-color: #364d47ea;
+}
+
+.App {
+  font-family: 'Poppins thin';
 }
 
 .headerLogo {
   position: absolute;
-  background-color: burlywood;
+  /* background-color: rgba(222, 184, 135, 0.967); */
   padding-right: 1rem;
-
   height: 200%;
+  /* border-radius: ; */
 
   /* height: 7rem; */
   /* margin-left: -1rem; */
@@ -26,37 +30,45 @@
   height: 7rem;
 }
 
+.headerLogo:hover {
+  cursor: pointer;
+}
+
 .tabs {
   list-style-type: none;
   margin: 0;
-  padding: 5px;
+  padding: 10px;
   font-style: underline;
   overflow: hidden;
   text-align: center;
 }
 
 .tab {
+  /* background-color: #53796f; */
+  border-color: #53796f;
+  border-width: 1px;
+  border-style: solid;
   float: right;
   top: 50%;
   color: burlywood;
   display: inline;
-  text-decoration: none;
   padding: 1em 2em;
+  border-radius: 5px;
+  margin-right: 1rem;
 }
 
 .tab:hover {
-  color: antiquewhite;
+  color: rgb(255, 198, 124);
+  background-color: #699186af;
   cursor: pointer;
-  background-color: #364d47;
-  border-radius: 5px;
 }
 
-.menu {
+/* .menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   text-align: center;
-}
+} */
 
 .menuImg {
   width: 25%;
@@ -67,4 +79,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.component {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #151f1c), url(./assets/bigMenu/Banner\ Hero_Regenerative\ Agriculture.png);
+  padding-top: 10rem;
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
 }
