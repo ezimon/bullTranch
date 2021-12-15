@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export const Footer = () => {
-    return (
-        <div>
-            <p>sup, imma footer</p>
-        </div>
-    )
-}
+  return (
+    <div className="footer">
+      {/* <p style={{padding: '0'}}>sup, imma footer</p */}
+    </div>
+  );
+};
