@@ -1,9 +1,14 @@
 import React from "react";
 import apiBG from "../assets/bigMenu/apiBG.png";
+import liveBG from "../assets/bigMenu/liveBG.png";
+import hydroBG from "../assets/bigMenu/hydroBG.png";
+import agriBG from "../assets/bigMenu/agriBG.png";
 import scroll from "../assets/mouse.png"
 import { Footer } from "./Footer";
 
-export const Apiculture = () => {
+
+
+export const SpecialComp = () => {
   return (
     <div className="special">
       <div className="shadowImg">

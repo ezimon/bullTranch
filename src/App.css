@@ -1,12 +1,16 @@
 .header {
-  position: absolute;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: sticky;
   width: 100%;
   left: 0%;
   right: 0%;
   top: 0px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  background-color: #364d47ea;
-  /* padding-top: 0.5rem; */
+  z-index: 100;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), #1c5040a2),
+    none;
+  margin: 0;
 }
 
 .App {
@@ -15,20 +19,14 @@
 
 .headerLogo {
   position: absolute;
-  /* background-color: rgba(222, 184, 135, 0.967); */
-  padding-right: 1rem;
-  height: 200%;
-  /* border-radius: ; */
-
-  /* height: 7rem; */
-
-  margin-left: -1.5rem;
-  /* margin-top: -.3rem; */
-
+  /* padding-right: 1rem; */
+  height: 220%;
+  margin-left: -1rem;
   float: left;
 }
 
 .menuLogo {
+  /* overflow: hidden; */
   position: absolute;
   height: 7rem;
 }
@@ -47,22 +45,23 @@
 }
 
 .tab {
-  /* background-color: #53796f; */
-  border-color: #53796f;
+  background-color: #699186;
+  border-color: ;
   border-width: 1px;
   border-style: solid;
   float: right;
   top: 50%;
-  color: burlywood;
+  color: #ffec82;
   display: inline;
-  padding: 1em 2em;
+  padding: 0.75em 1em;
   border-radius: 5px;
   margin-right: 1rem;
 }
 
 .tab:hover {
-  color: rgb(255, 198, 124);
-  background-color: #69918671;
+  /* color: #ffe865; */
+  background-color: #53796f;
+  /* color: rgb(255, 225, 151); */
   cursor: pointer;
 }
 
@@ -85,27 +84,40 @@
 }
 
 .component {
+  position: absolute;
+  top: 0;
+  height: 100%;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #151f1c),
     url(./assets/bigMenu/agriBG.png);
+    background-size: auto;
   padding-top: 10rem;
   position: absolute;
   margin: 0;
   width: 100%;
-  height: 100%;
   z-index: -3;
 }
 
 .special {
-  /* position: relative; */
   width: 100%;
   padding-top: 3em;
-  height: 50em;
+  /* height: 50em; */
 }
 
 .footer {
-  width: 100%;
   height: 10em;
-  background-color: #53796f;
+  background-color: #151f1c;
+  display: flex;
+  justify-content: space-evenly;
+  /* padding-bottom: 2em; */
+}
+
+.foIcon {
+  height: 4em;
+}
+
+.iCont {
+  width: 15em;
+  color: #ffec82;
 }
 
 .bgImg {
@@ -120,15 +132,14 @@
     none;
 }
 
-.titleCont {
-  padding-top: 10rem;
+.Cont {
   width: 50%;
-  /* position: relative; */
   right: 50%;
-  transform: translateX(50%)
+  transform: translateX(50%);
 }
 
 .spTitle {
+  padding-top: 3rem;
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
@@ -136,3 +147,21 @@
   font-size: 2.5em;
 }
 
+.paragraph {
+  color: white;
+  font-family: "Poppins";
+  letter-spacing: 0.14rem;
+  line-height: 24px;
+}
+
+.mouse {
+  padding-top: 1rem;
+  position: absolute;
+  height: 3.8em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.form {
+
+}
