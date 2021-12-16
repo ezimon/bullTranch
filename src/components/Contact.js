@@ -24,8 +24,9 @@ export const Contact = () => {
   // };
 
   return (
-    <div className="component tc">
+    <div className="component">
       <div className="form">
+        <h1 className="conTitle tc">Contact form</h1>
         <form
           action="https://formsubmit.co/bulltranch@whyw8t.com"
           method="POST"
@@ -33,19 +34,28 @@ export const Contact = () => {
           <input type="hidden" name="_next" value="http://localhost:3000/" />
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_template" value="table" />
-          <label>Name</label>
-          <br />
-          <input type="text" name="user_name" />
-          <br />
-          <label>Email</label>
-          <br />
-          <input type="email" name="email" placeholder="Email Address" />
-          <br />
-          <label>Message</label>
-          <br />
-          <textarea name="message" />
-          <br />
-          <input type="submit" value="Send" />
+          <div className="flex-container">
+            <div>
+              <label className="topTag">Name</label>
+              <br />
+              <input type="text" name="user_name" placeholder="Name" />
+              <br />
+              <br />
+              <label className="topTag">Email</label>
+              <br />
+              <input type="email" name="email" placeholder="Email address" />
+              <br />
+              <br />
+            </div>
+            <div style={{marginLeft: '1em'}}>
+              <label className="topTag">Message</label>
+              <br />
+              <textarea name="message" className="mailText" />
+              <br />
+              <br />
+              <input type="submit" value="Send" className="submitBtn" />
+            </div>
+          </div>
         </form>
       </div>
     </div>

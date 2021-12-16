@@ -14,7 +14,7 @@ import { Livestock } from "./components/Livestock";
 function App() {
   const [route, setRoute] = useState("home");
 
-  const home = <Home setRoute={setRoute} />;
+  const home = <Home setRoute={setRoute} route={route} />;
   const about = <About />;
   const contact = <Contact />;
 
