@@ -47,7 +47,7 @@ export const Contact = () => {
               <br />
               <br />
             </div>
-            <div style={{marginLeft: '1em'}}>
+            <div style={{marginLeft: '1em', width: '100%'}}>
               <label className="topTag">Message</label>
               <br />
               <textarea name="message" className="mailText" />
