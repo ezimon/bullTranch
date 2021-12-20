@@ -1,28 +1,10 @@
 import React, { useRef } from "react";
-import emailjs from "emailjs-com";
+import toast, { Toaster } from "react-hot-toast";
 
 export const Contact = () => {
-  // const form = useRef();
-
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs.sendForm(
-  //       "service_4sx5jxi",
-  //       "template_o29d7pf",
-  //       form.current,
-  //       "user_i39th1Qwjn4qvUwM8OBYB"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
-
+  const notiify = toast.success(
+    `Mail sent succesfully, we'll contact you soon`
+  );
   return (
     <div className="component">
       <div className="form">
@@ -31,29 +13,48 @@ export const Contact = () => {
           action="https://formsubmit.co/bulltranch@whyw8t.com"
           method="POST"
         >
-          <input type="hidden" name="_next" value="http://localhost:3000/" />
+          <input type="hidden" name="_next" value="null" />
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_template" value="table" />
+          <br />
           <div className="flex-container">
             <div>
               <label className="topTag">Name</label>
               <br />
-              <input type="text" name="user_name" placeholder="Name" />
+              <input
+                type="text"
+                name="user_name"
+                placeholder="Name"
+                className="grow"
+              />
               <br />
               <br />
               <label className="topTag">Email</label>
               <br />
-              <input type="email" name="email" placeholder="Email address" />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email address"
+                className="grow"
+              />
               <br />
               <br />
             </div>
-            <div style={{marginLeft: '1em'}}>
+            <div
+              style={{ marginLeft: "1em", width: "100%", position: "relative" }}
+            >
               <label className="topTag">Message</label>
               <br />
               <textarea name="message" className="mailText" />
               <br />
               <br />
-              <input type="submit" value="Send" className="submitBtn" />
+              {/* <div onClick={() => notiify()}> */}
+                <input
+                  type="submit"
+                  value="Send mail"
+                  className="submitBtn grow"
+                />
+              {/* </div> */}
             </div>
           </div>
         </form>

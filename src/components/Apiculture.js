@@ -49,6 +49,7 @@ export const Apiculture = () => {
           </div>
         </div>
       </div>
+      {/* <hr /> */}
       <Footer />
     </div>
   );
