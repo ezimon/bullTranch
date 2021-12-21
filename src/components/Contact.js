@@ -1,13 +1,12 @@
 import React, { useRef } from "react";
 import { Footer } from "./Footer";
-// import toast, { Toaster } from "react-hot-toast";
+import apiBG from "../assets/bigMenu/homeBG.jpg";
 
 export const Contact = () => {
-  // const notiify = toast.success(
-  //   `Mail sent succesfully, we'll contact you soon`
-  // );
+
   return (
       <div className="component">
+        <img src={apiBG} className="bgImg homeBG" />
         <div className="form">
           <h1 className="conTitle tc">Contact form</h1>
           <form
