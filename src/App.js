@@ -5,7 +5,6 @@ import { Header } from "./components/Header";
 import { Home } from "./components/Home";
 import { About } from "./components/About";
 import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
 import { Apiculture } from "./components/Apiculture";
 import { Agriculture } from "./components/Agriculture";
 import { Hydroponic } from "./components/Hydroponic";

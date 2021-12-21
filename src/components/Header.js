@@ -12,11 +12,11 @@ export const Header = ({ setRoute }) => {
       />
       <ul className="tabs">
         <b>
-          <li className="tab grow" onClick={() => setRoute("about")}>
-            Who we are
-          </li>
           <li className="tab grow" onClick={() => setRoute("contact")}>
             Contact us
+          </li>
+          <li className="tab grow" onClick={() => setRoute("about")}>
+            Who we are
           </li>
           <li className="tab grow" onClick={() => setRoute("home")}>
             Home
