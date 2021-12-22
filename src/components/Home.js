@@ -13,7 +13,6 @@ export const Home = ({ setRoute, route }) => {
         images={[liveBG, agriBG, apiBG, hydroBG]}
         duration={10}
         transition={1}
-        className="bgImg"
       />
       {/* <img src={apiBG} className="bgImg" /> */}
       <div className="component tc">

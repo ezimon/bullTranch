@@ -6,7 +6,6 @@ import map from "../assets/icons/map.png";
 export const Footer = () => {
   return (
       <div className="footer">
-        {/* <p style={{padding: '0'}}>sup, imma footer</p */}
         <div className="iCont tc">
           <img src={tel} alt="" className="foIcon" />
           <p>+1</p>
