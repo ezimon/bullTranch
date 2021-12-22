@@ -64,13 +64,6 @@
   width: 25%;
 }
 
-.menuTitle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .component {
   position: absolute;
   top: 0;
@@ -92,6 +85,9 @@
   border-width: 0 1px 0 1px;
   border-style: solid;
   border-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
 }
 
 .menu {
@@ -103,16 +99,6 @@
 
 .menu:hover {
   cursor: pointer;
-}
-
-.menuItem {
-  height: 100%;
-  width: 25%;
-  border-width: 0 1px 0 1px;
-  border-style: solid;
-  border-color: white;
-  background-image: url(./assets/bigMenu/transparent.png);
-  -webkit-transition: background-image 0.7s;
 }
 
 #Mapi:hover {
@@ -133,14 +119,6 @@
 
 .menuItem:hover {
   color: black;
-}
-
-.Mtitle {
-  position: relative;
-  color: whitesmoke;
-  position: relative;
-  padding-top: 110%;
-  font-size: 190%;
 }
 
 .special {
@@ -285,4 +263,41 @@
 
 .pi {
   font-size: 1.75em !important;
+}
+
+.progCont {
+  height: 2%;
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.progBar {
+  background-color: #53796f;
+  height: 100%;
+}
+
+
+.menuItem {
+  height: 100%;
+  width: 25%;
+  border-width: 0 1px 0 1px;
+  border-style: solid;
+  border-color: white;
+  background-image: url(./assets/bigMenu/transparent.png);
+  transition: background-image 0.7s;
+}
+
+.Mtitle {
+  position: relative;
+  color: whitesmoke;
+  font-size: 190%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.menuTCont {
+  height: 100%;
+  display: table;
+  text-align: center;
+  width: 100%;
 }

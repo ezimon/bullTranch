@@ -1,6 +1,8 @@
 import React from "react";
 
 export const BigMenu = ({ setRoute }) => {
+  let barW = "100%";
+
   return (
     <div className="menuCont">
       <div className="menu">
@@ -9,7 +11,7 @@ export const BigMenu = ({ setRoute }) => {
           id="Mapi"
           onClick={() => setRoute("apiculture")}
         >
-          <div>
+          <div className="menuTCont">
             <h1 className="Mtitle">Apiculture</h1>
           </div>
         </div>
@@ -18,7 +20,7 @@ export const BigMenu = ({ setRoute }) => {
           id="Mhydro"
           onClick={() => setRoute("hydroponic")}
         >
-          <div>
+          <div className="menuTCont">
             <h1 className="Mtitle">Hydroponic System</h1>
           </div>
         </div>
@@ -27,7 +29,7 @@ export const BigMenu = ({ setRoute }) => {
           id="Magri"
           onClick={() => setRoute("agriculture")}
         >
-          <div>
+          <div className="menuTCont">
             <h1 className="Mtitle">Regenerative Agriculture</h1>
           </div>
         </div>
@@ -36,8 +38,18 @@ export const BigMenu = ({ setRoute }) => {
           id="Mlive"
           onClick={() => setRoute("livestock")}
         >
-          <div>
+          <div className="menuTCont">
             <h1 className="Mtitle">Organic Livestock</h1>
+
+          <div className="progCont">
+            <div
+              className="progBar"
+              style={{
+                width: barW,
+              }}
+            ></div>
+          </div>
+
           </div>
         </div>
       </div>
