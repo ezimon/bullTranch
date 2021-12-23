@@ -75,7 +75,7 @@ export const Agriculture = ({ setRoute, route }) => {
           <br />
           <hr />
         </div>
-        <Footer />
+        <Footer setRoute={setRoute} />
       </div>
     </div>
   );

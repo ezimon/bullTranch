@@ -2,10 +2,10 @@ import React, { useRef } from "react";
 import { Footer } from "./Footer";
 import apiBG from "../assets/bigMenu/liveBG.jpg";
 
-export const Contact = () => {
+export const Contact = ({ setRoute}) => {
   return (
     <div>
-      <div className="component">
+      <div>
         <img src={apiBG} className="bgImg" />
           <div className="form">
             <h1 className="conTitle tc">Contact form</h1>
@@ -63,13 +63,7 @@ export const Contact = () => {
               </div>
             </form>
           </div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-        <Footer />
+        <Footer setRoute={setRoute}/>
       </div>
     </div>
   );

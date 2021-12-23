@@ -58,7 +58,7 @@ export const Hydroponic = ({ setRoute, route }) => {
         <br />
         <br />
         <hr />
-        <Footer />
+        <Footer setRoute={setRoute} />
       </div>
     </div>
   );

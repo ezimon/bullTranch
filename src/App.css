@@ -208,6 +208,10 @@
   font-size: 19px;
 }
 
+.subPP {
+  margin-bottom: 2rem;
+}
+
 .foIcon {
   height: 4em;
 }
@@ -263,6 +267,11 @@
   line-height: 22px;
 }
 
+.paragraphh {
+  letter-spacing: 0.16rem;
+  font-size: 18px;
+}
+
 .mouse {
   padding-top: 1rem;
   position: absolute;
@@ -272,9 +281,6 @@
 }
 
 .form {
-  /* position: absolute; */
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
   display: table;
   margin: 0 auto;
   color: #fff5bc;
@@ -289,6 +295,8 @@
   padding: 2.5rem;
   border-radius: 5px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-bottom: 5rem;
+  margin-top: 3rem;
 }
 
 .flex-container {
@@ -379,7 +387,6 @@
   position: fixed;
   right: 0;
   padding-right: 2rem;
-  text-decoration: underline;
   background: rgb(0, 36, 10);
   background: linear-gradient(
     90deg,
@@ -391,6 +398,10 @@
 
 .spTab:hover {
   cursor: pointer;
+}
+
+.spTab {
+  text-decoration: underline;
 }
 
 .box {

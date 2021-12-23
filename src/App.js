@@ -14,8 +14,8 @@ function App() {
   const [route, setRoute] = useState("home");
 
   const home = <Home setRoute={setRoute} route={route} />;
-  const about = <About />;
-  const contact = <Contact />;
+  const about = <About setRoute={setRoute}/>;
+  const contact = <Contact setRoute={setRoute} />;
 
   const apiculture = <Apiculture setRoute={setRoute} route={route} />;
   const agriculture = <Agriculture setRoute={setRoute} route={route} />;
@@ -54,7 +54,7 @@ function App() {
     <div className="App">
       <Header setRoute={setRoute} />
       {component}
-      {/* <Footer /> */}
+      {/* <Footer setRoute={setRoute} /> */}
     </div>
   );
 }
