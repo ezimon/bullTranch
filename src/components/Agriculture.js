@@ -7,7 +7,7 @@ export const Agriculture = () => {
   return (
     <div className="special">
       <div className="shadowImg">
-        <img src={apiBG} className="bgImg" />
+        <img alt="" src={apiBG} className="bgImg" />
         <div className="Cont">
           <h1 className="spTitle tl">Regenerative Agriculture:</h1>
           <p className="paragraph subP">
@@ -17,7 +17,7 @@ export const Agriculture = () => {
             that regenerate and revitalize the soil and the environment.
           </p>
           <br />
-          <img src={scroll} alt="" className="mouse" />
+          <img alt="" src={scroll} alt="" className="mouse" />
         </div>
       </div>
 

@@ -7,7 +7,7 @@ export const Apiculture = () => {
   return (
     <div className="special">
       <div className="shadowImg">
-        <img src={apiBG} className="bgImg" />
+        <img alt="" alt="" src={apiBG} className="bgImg" />
         <div className="Cont">
           <h1 className="spTitle tl">Apiculture:</h1>
           <p className="paragraph subP">
@@ -16,7 +16,7 @@ export const Apiculture = () => {
             highest quality, pure honey and beeswax.
           </p>
           <br />
-          <img src={scroll} alt="" className="mouse" />
+          <img alt="" src={scroll} alt="" className="mouse" />
         </div>
       </div>
 

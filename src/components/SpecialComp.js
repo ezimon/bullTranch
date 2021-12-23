@@ -25,7 +25,7 @@ export const SpecialComp = () => {
             highest quality, pure honey and beeswax.
           </p>
           <br />
-          <img src={scroll} alt="" className="mouse" />
+          <img alt="" src={scroll} alt="" className="mouse" />
         </div>
 
         <div className="spBody">

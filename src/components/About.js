@@ -6,7 +6,7 @@ export const About = () => {
   return (
     <div>
       <div className="shadowImg">
-        <img src={liveBG} className="bgImg" />
+        <img alt="" src={liveBG} className="bgImg" />
         <div className="tc iguess">
           <h1 className="subtitle">About us:</h1>
           <div className="width-70">

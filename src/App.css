@@ -1,3 +1,45 @@
+@-webkit-keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 1000px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 1000px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
 .header {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -11,6 +53,8 @@
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0), #1c5040a2),
     none;
   margin: 0;
+  -webkit-animation: slide-top 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .App {
@@ -109,18 +153,30 @@
 
 #Mapi:hover {
   background-image: url(./assets/bigMenu/apiMask.png);
+  -webkit-animation: shadow-drop-center 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 #Mlive:hover {
   background-image: url(./assets/bigMenu/liveMask.png);
+  -webkit-animation: shadow-drop-center 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 #Magri:hover {
   background-image: url(./assets/bigMenu/agriMask.png);
+  -webkit-animation: shadow-drop-center 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 #Mhydro:hover {
   background-image: url(./assets/bigMenu/hydroMask.png);
+  -webkit-animation: shadow-drop-center 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .menuItem:hover {
@@ -133,7 +189,7 @@
 }
 
 .footer {
-  margin-top:0;
+  margin-top: 0;
   background-color: #334d45;
   display: flex;
   justify-content: space-evenly;
@@ -314,5 +370,5 @@
 .iguess {
   height: 100%;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #334d45),
-  none;
+    none;
 }
