@@ -1,5 +1,5 @@
 import React from "react";
-import liveBG from "../assets/bigMenu/liveBG.jpg";
+import liveBG from "../assets/bigMenu/agriBG.png";
 import { Footer } from "./Footer";
 
 export const About = () => {

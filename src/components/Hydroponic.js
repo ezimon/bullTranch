@@ -2,10 +2,12 @@ import React from "react";
 import apiBG from "../assets/bigMenu/hydroBG.webp";
 import scroll from "../assets/mouse.png";
 import { Footer } from "./Footer";
+import { SpNav } from "./SpNav";
 
-export const Hydroponic = () => {
+export const Hydroponic = ({ setRoute, route }) => {
   return (
     <div className="special">
+      <SpNav setRoute={setRoute} route={route} />
       <div className="shadowImg">
         <img src={apiBG} className="bgImg" />
         <div className="Cont">

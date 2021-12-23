@@ -17,10 +17,10 @@ function App() {
   const about = <About />;
   const contact = <Contact />;
 
-  const apiculture = <Apiculture />;
-  const agriculture = <Agriculture />;
-  const hydroponic = <Hydroponic />;
-  const livestock = <Livestock />;
+  const apiculture = <Apiculture setRoute={setRoute} route={route} />;
+  const agriculture = <Agriculture setRoute={setRoute} route={route} />;
+  const hydroponic = <Hydroponic setRoute={setRoute} route={route} />;
+  const livestock = <Livestock setRoute={setRoute} route={route} />;
 
   let component;
   switch (route) {

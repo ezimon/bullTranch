@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
 import { Footer } from "./Footer";
-import apiBG from "../assets/bigMenu/homeBG.jpg";
+import apiBG from "../assets/bigMenu/liveBG.jpg";
 
 export const Contact = () => {
   return (
     <div>
       <div className="component">
-        <img src={apiBG} className="bgImg homeBG" />
+        <img src={apiBG} className="bgImg" />
           <div className="form">
             <h1 className="conTitle tc">Contact form</h1>
             <form
@@ -25,7 +25,7 @@ export const Contact = () => {
                     type="text"
                     name="user_name"
                     placeholder="Name"
-                    className="grow"
+                    className="box grow"
                   />
                   <br />
                   <br />
@@ -35,7 +35,7 @@ export const Contact = () => {
                     type="email"
                     name="email"
                     placeholder="Email address"
-                    className="grow"
+                    className="box grow"
                   />
                   <br />
                   <br />
@@ -49,7 +49,7 @@ export const Contact = () => {
                 >
                   <label className="topTag">Message</label>
                   <br />
-                  <textarea name="message" className="mailText" />
+                  <textarea name="message" className="box mailText" />
                   <br />
                   <br />
                   {/* <div onClick={() => notiify()}> */}

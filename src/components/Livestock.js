@@ -2,10 +2,12 @@ import React from "react";
 import apiBG from "../assets/bigMenu/liveBG.jpg";
 import scroll from "../assets/mouse.png";
 import { Footer } from "./Footer";
+import { SpNav } from "./SpNav";
 
-export const Livestock = () => {
+export const Livestock = ({ setRoute, route }) => {
   return (
     <div className="special">
+      <SpNav setRoute={setRoute} route={route} />
       <div className="shadowImg">
         <img src={apiBG} className="bgImg" />
         <div className="Cont">
@@ -60,13 +62,13 @@ export const Livestock = () => {
             the most potential to sequester carbon.
           </p>
         </div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <hr />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <hr />
         <Footer />
       </div>
     </div>

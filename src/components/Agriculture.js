@@ -2,10 +2,12 @@ import React from "react";
 import apiBG from "../assets/bigMenu/agriBG.png";
 import scroll from "../assets/mouse.png";
 import { Footer } from "./Footer";
+import { SpNav } from "./SpNav";
 
-export const Agriculture = () => {
+export const Agriculture = ({ setRoute, route }) => {
   return (
     <div className="special">
+      <SpNav setRoute={setRoute} route={route} />
       <div className="shadowImg">
         <img alt="" src={apiBG} className="bgImg" />
         <div className="Cont">
