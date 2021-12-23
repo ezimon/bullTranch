@@ -25,7 +25,7 @@ export const Contact = () => {
                     type="text"
                     name="user_name"
                     placeholder="Name"
-                    className="box grow"
+                    className="box"
                   />
                   <br />
                   <br />
@@ -35,7 +35,7 @@ export const Contact = () => {
                     type="email"
                     name="email"
                     placeholder="Email address"
-                    className="box grow"
+                    className="box"
                   />
                   <br />
                   <br />

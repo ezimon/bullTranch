@@ -53,8 +53,8 @@
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0), #1c5040a2),
     none;
   margin: 0;
-  -webkit-animation: slide-top 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .App {
@@ -394,7 +394,12 @@
 }
 
 .box {
-  border-radius: 5px;
+  border-radius: 3.5px;
   border: none;
   margin-top: 0.5rem;
+  /* background-color: rgba(39, 65, 73, 0.946); */
+}
+
+input:focus {
+  border: none;
 }
