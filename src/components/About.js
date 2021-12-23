@@ -6,13 +6,8 @@ export const About = ({ setRoute}) => {
   return (
     <div>
         <img alt="" src={liveBG} className="bgImg" />
-
-      <div className="shadowImg">
-
-        <div className="tc iguess">
-
+      <div className="shadowImg tc">
           <h1 className="subtitle">About us:</h1>
-
           <div className="width-70">
             <p className="paragraph subP subPP">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
@@ -34,13 +29,8 @@ export const About = ({ setRoute}) => {
               leo at erat porta aliquet. Vestibulum volutpat ullamcorper.
             </p>
           </div>
-
-        </div>
-
-      <Footer setRoute={setRoute} />
-
       </div>
-
+      <Footer setRoute={setRoute} />
     </div>
   );
 };

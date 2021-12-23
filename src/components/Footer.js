@@ -3,7 +3,7 @@ import tel from "../assets/icons/tel.png";
 import mail from "../assets/icons/mail.png";
 import map from "../assets/icons/map.png";
 
-export const Footer = ({setRoute, route}) => {
+export const Footer = ({ setRoute, route }) => {
   return (
     <div className="footer">
       <div className="iCont tc">
@@ -12,7 +12,7 @@ export const Footer = ({setRoute, route}) => {
       </div>
       <div className="iCont tc spTab" onClick={() => setRoute("contact")}>
         <img alt="" src={mail} alt="" className="foIcon" />
-        <p style={{textDecoration: 'underline'}}>Send e-mail</p>
+        <p style={{ textDecoration: "underline" }}>Send e-mail</p>
       </div>
       <div className="iCont tc">
         <img alt="" src={map} alt="" className="foIcon" />
