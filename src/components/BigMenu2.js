@@ -7,6 +7,12 @@ import liveBG from "../assets/bigMenu/liveBG.jpg";
 import hydroBG from "../assets/bigMenu/hydroBG.webp";
 
 export const BigMenu2 = ({ setRoute }) => {
+  const [prog, setProg] = useState(0);
+  
+  // useEffect(() => {
+
+  // }, [ind]);
+
   const [menuRoute, setMenuRoute] = useState();
 
   const BgImgs = [liveBG, agriBG, apiBG, hydroBG];
@@ -32,13 +38,20 @@ export const BigMenu2 = ({ setRoute }) => {
 
   const pause = () => {};
 
+  const seconds = 7;
+
   useEffect(() => {
     window.setTimeout(() => {
       ind === 3 ? setInd(0) : setInd(ind + 1);
-    }, 5000);
-
+    }, seconds*1000);
+    
     setP(ps[ind]);
     seth1(h1s[ind]);
+    setProg(0)
+    const interval = setInterval(() => {
+      setProg((prog) => prog + seconds/(seconds*10));
+    }, seconds);
+    return () => clearInterval(interval);
   }, [ind]);
 
   return (
@@ -61,33 +74,75 @@ export const BigMenu2 = ({ setRoute }) => {
         </div>
 
         <div className="menu">
-          <div className="menuItem" id={ind === 2 ? "hoverId" : "Mapi"}>
-            <div className="menuTCont">
-              <h1 className="Mtitle2 pointer tb" onClick={() => setInd(2)}>
-                Apiculture
-              </h1>
-            </div>
-          </div>
-          <div className="menuItem" id={ind === 3 ? "hoverId" : "Mhydro"}>
-            <div className="menuTCont">
-              <h1 className="Mtitle2 pointer tb" onClick={() => setInd(3)}>
-                Hydroponic System
-              </h1>
-            </div>
-          </div>
-          <div className="menuItem" id={ind === 1 ? "hoverId" : "Magri"}>
-            <div className="menuTCont">
-              <h1 className="Mtitle2 pointer tb" onClick={() => setInd(1)}>
-                Regenerative Agriculture
-              </h1>
-            </div>
-          </div>
           <div className="menuItem" id={ind === 0 ? "hoverId" : "Mlive"}>
             <div className="menuTCont">
               <h1 className="Mtitle2 pointer tb" onClick={() => setInd(0)}>
                 Organic Livestock
               </h1>
             </div>
+            {ind === 0 ? (
+              <div className="progCont">
+                <div
+                  className="progBar"
+                  style={{
+                    width: JSON.stringify(prog) + "%",
+                  }}
+                ></div>
+              </div>
+            ) : null}
+          </div>
+
+          <div className="menuItem" id={ind === 1 ? "hoverId" : "Magri"}>
+            <div className="menuTCont">
+              <h1 className="Mtitle2 pointer tb" onClick={() => setInd(1)}>
+                Regenerative Agriculture
+              </h1>
+            </div>
+            {ind === 1 ? (
+              <div className="progCont">
+                <div
+                  className="progBar"
+                  style={{
+                    width: JSON.stringify(prog) + "%",
+                  }}
+                ></div>
+              </div>
+            ) : null}
+          </div>
+          <div className="menuItem" id={ind === 2 ? "hoverId" : "Mapi"}>
+            <div className="menuTCont">
+              <h1 className="Mtitle2 pointer tb" onClick={() => setInd(2)}>
+                Apiculture
+              </h1>
+            </div>
+            {ind === 2 ? (
+              <div className="progCont">
+                <div
+                  className="progBar"
+                  style={{
+                    width: JSON.stringify(prog) + "%",
+                  }}
+                ></div>
+              </div>
+            ) : null}
+          </div>
+
+          <div className="menuItem" id={ind === 3 ? "hoverId" : "Mhydro"}>
+            <div className="menuTCont">
+              <h1 className="Mtitle2 pointer tb" onClick={() => setInd(3)}>
+                Hydroponic System
+              </h1>
+            </div>
+            {ind === 3 ? (
+              <div className="progCont">
+                <div
+                  className="progBar"
+                  style={{
+                    width: JSON.stringify(prog) + "%",
+                  }}
+                ></div>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>
