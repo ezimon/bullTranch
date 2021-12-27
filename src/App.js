@@ -9,12 +9,16 @@ import { Apiculture } from "./components/Apiculture";
 import { Agriculture } from "./components/Agriculture";
 import { Hydroponic } from "./components/Hydroponic";
 import { Livestock } from "./components/Livestock";
+import useWindowDimensions from "./components/ScreenWidth";
 
 function App() {
+  const { height, width } = useWindowDimensions();
+  const ratio = height / width;
+
   const [route, setRoute] = useState("home");
 
   const home = <Home setRoute={setRoute} route={route} />;
-  const about = <About setRoute={setRoute}/>;
+  const about = <About setRoute={setRoute} />;
   const contact = <Contact setRoute={setRoute} />;
 
   const apiculture = <Apiculture setRoute={setRoute} route={route} />;
@@ -52,7 +56,8 @@ function App() {
 
   return (
     <div className="App">
-      <Header setRoute={setRoute} />
+      {/* {'ratio:'+ratio} */}
+      <Header setRoute={setRoute} ratio={ratio} />
       {component}
       {/* <Footer setRoute={setRoute} /> */}
     </div>

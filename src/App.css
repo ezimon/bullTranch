@@ -183,33 +183,6 @@ box-shadow: 0px 28px 50px 5px rgba(0,0,0,0.59); */
   cursor: pointer;
 } */
 
-#Mapi:hover {
-  background-image: url(./assets/bigMenu/apiMask.png);
-  -webkit-animation: shadow-drop-center 0.4s
-    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-#Mlive:hover {
-  background-image: url(./assets/bigMenu/liveMask.png);
-  -webkit-animation: shadow-drop-center 0.4s
-    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-#Magri:hover {
-  background-image: url(./assets/bigMenu/agriMask.png);
-  -webkit-animation: shadow-drop-center 0.4s
-    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-#Mhydro:hover {
-  background-image: url(./assets/bigMenu/hydroMask.png);
-  -webkit-animation: shadow-drop-center 0.4s
-    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
 
 .menuItem:hover {
   color: black;
@@ -403,20 +376,20 @@ box-shadow: 0px 28px 50px 5px rgba(0,0,0,0.59); */
 
 .Mtitle2 {
   position: relative;
+  bottom: -80%;
   color: whitesmoke;
   font-size: 2vw;
-  display: table-cell;
-  vertical-align: bottom;
-  padding-bottom: 1em;
   filter: drop-shadow(10px 4px 4px rgba(28, 43, 25, 0.849));
 }
 
 .menuTCont {
-  height: 100%;
   display: table;
+  width: 100%;
+  height: 100%;
   text-align: center;
   width: 100%;
 }
+
 
 .iguess {
   height: 100%;
