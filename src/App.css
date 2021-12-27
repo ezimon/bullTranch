@@ -183,6 +183,42 @@ box-shadow: 0px 28px 50px 5px rgba(0,0,0,0.59); */
   cursor: pointer;
 } */
 
+#Mapi:hover {
+  background-image: url(./assets/bigMenu/apiMask.png);
+  -webkit-animation: shadow-drop-center 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+#Mlive:hover {
+  background-image: url(./assets/bigMenu/liveMask.png);
+  -webkit-animation: shadow-drop-center 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+#Magri:hover {
+  background-image: url(./assets/bigMenu/agriMask.png);
+  -webkit-animation: shadow-drop-center 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+#Mhydro:hover {
+  background-image: url(./assets/bigMenu/hydroMask.png);
+  -webkit-animation: shadow-drop-center 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+#hoverId:hover {
+  /* -webkit-box-shadow: 0px 0px 34px 10px rgba(255, 255, 255, 0.69);
+  box-shadow: 0px 0px 34px 10px rgba(255, 255, 255, 0.69); */
+  /* background-color: #53796f8f; */
+  -webkit-animation: shadow-drop-center 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 
 .menuItem:hover {
   color: black;
@@ -230,6 +266,8 @@ box-shadow: 0px 28px 50px 5px rgba(0,0,0,0.59); */
   top: 0rem;
   position: fixed;
   z-index: -100;
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .homeBG {
@@ -389,7 +427,6 @@ box-shadow: 0px 28px 50px 5px rgba(0,0,0,0.59); */
   text-align: center;
   width: 100%;
 }
-
 
 .iguess {
   height: 100%;

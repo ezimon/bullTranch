@@ -9,6 +9,9 @@ import hydroBG from "../assets/bigMenu/hydroBG.webp";
 export const BigMenu2 = ({ setRoute }) => {
   const [menuRoute, setMenuRoute] = useState();
 
+  const BgImgs = [liveBG, agriBG, apiBG, hydroBG];
+  const [bgImg, setBgImg] = useState(liveBG);
+
   const ps = [
     "We focus on pasture-based, encouraging biodiversity, healthy soil, and humane treatment of animals. Our priorities are pasture and restrictions on the use of antibiotics and hormones.",
     "This is an approach we have incorporated into our ranch management plan. The key to regenerative agriculture is that it not only “does no harm” to the land but actually improves it, using technologies that regenerate and revitalize the soil and the environment. ",
@@ -32,73 +35,59 @@ export const BigMenu2 = ({ setRoute }) => {
   useEffect(() => {
     window.setTimeout(() => {
       ind === 3 ? setInd(0) : setInd(ind + 1);
-    }, 7000);
+    }, 5000);
 
     setP(ps[ind]);
     seth1(h1s[ind]);
   }, [ind]);
 
   return (
-    <div className="menuCont tc">
-      <BackgroundSlider
-        images={[liveBG, agriBG, apiBG, hydroBG]}
-        duration={6}
-        transition={1}
-      />
-      <div className="textCarouselCont tc">
-        <div className="textCarouselBG">
-          <h2 className="carouselTitle">{h1}</h2>
-          <p className="carouselP tc">
-            <b>{p}</b>
-          </p>
-          <button
-            className="btnLearn pointer grow"
-            onClick={() => setRoute("")}
-          >
-            Learn more
-          </button>
+    <div>
+      <img src={BgImgs[ind]} className="bgImg" />
+      <div className="menuCont tc">
+        <div className="textCarouselCont tc">
+          <div className="textCarouselBG">
+            <h2 className="carouselTitle">{h1}</h2>
+            <p className="carouselP tc">
+              <b>{p}</b>
+            </p>
+            <button
+              className="btnLearn pointer grow"
+              onClick={() => setRoute("")}
+            >
+              Learn more
+            </button>
+          </div>
         </div>
-      </div>
 
-      <div className="menu">
-        <div className="menuItem" id="Mapi">
-          <div className="menuTCont">
-            <h1
-              className="Mtitle2 pointer tb"
-              onClick={() => setInd(2)(pause())}
-            >
-              Apiculture
-            </h1>
+        <div className="menu">
+          <div className="menuItem" id={ind === 2 ? "hoverId" : "Mapi"}>
+            <div className="menuTCont">
+              <h1 className="Mtitle2 pointer tb" onClick={() => setInd(2)}>
+                Apiculture
+              </h1>
+            </div>
           </div>
-        </div>
-        <div className="menuItem" id="Mhydro">
-          <div className="menuTCont">
-            <h1
-              className="Mtitle2 pointer tb"
-              onClick={() => setInd(3)(pause())}
-            >
-              Hydroponic System
-            </h1>
+          <div className="menuItem" id={ind === 3 ? "hoverId" : "Mhydro"}>
+            <div className="menuTCont">
+              <h1 className="Mtitle2 pointer tb" onClick={() => setInd(3)}>
+                Hydroponic System
+              </h1>
+            </div>
           </div>
-        </div>
-        <div className="menuItem" id="Magri">
-          <div className="menuTCont">
-            <h1
-              className="Mtitle2 pointer tb"
-              onClick={() => setInd(1)(pause())}
-            >
-              Regenerative Agriculture
-            </h1>
+          <div className="menuItem" id={ind === 1 ? "hoverId" : "Magri"}>
+            <div className="menuTCont">
+              <h1 className="Mtitle2 pointer tb" onClick={() => setInd(1)}>
+                Regenerative Agriculture
+              </h1>
+            </div>
           </div>
-        </div>
-        <div className="menuItem" id="Mlive">
-          <div className="menuTCont">
-            <h1
-              className="Mtitle2 pointer tb"
-              onClick={() => setInd(0)(pause())}
-            >
-              Organic Livestock
-            </h1>
+          <div className="menuItem" id={ind === 0 ? "hoverId" : "Mlive"}>
+            <div className="menuTCont">
+              <h1 className="Mtitle2 pointer tb" onClick={() => setInd(0)}>
+                Organic Livestock
+              </h1>
+            </div>
           </div>
         </div>
       </div>
