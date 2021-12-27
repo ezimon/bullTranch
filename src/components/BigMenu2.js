@@ -7,11 +7,9 @@ import liveBG from "../assets/bigMenu/liveBG.jpg";
 import hydroBG from "../assets/bigMenu/hydroBG.webp";
 
 export const BigMenu2 = ({ setRoute }) => {
-  const [prog, setProg] = useState(0);
-  
-  // useEffect(() => {
+  const routes = ["livestock", "agriculture", "apiculture", "hydroponic"];
 
-  // }, [ind]);
+  const [prog, setProg] = useState(0);
 
   const [menuRoute, setMenuRoute] = useState();
 
@@ -38,18 +36,18 @@ export const BigMenu2 = ({ setRoute }) => {
 
   const pause = () => {};
 
-  const seconds = 7;
+  const seconds = 10;
 
   useEffect(() => {
     window.setTimeout(() => {
       ind === 3 ? setInd(0) : setInd(ind + 1);
-    }, seconds*1000);
-    
+    }, seconds * 1000);
+
     setP(ps[ind]);
     seth1(h1s[ind]);
-    setProg(0)
+    setProg(0);
     const interval = setInterval(() => {
-      setProg((prog) => prog + seconds/(seconds*10));
+      setProg((prog) => prog + seconds / (seconds * 10));
     }, seconds);
     return () => clearInterval(interval);
   }, [ind]);
@@ -66,7 +64,7 @@ export const BigMenu2 = ({ setRoute }) => {
             </p>
             <button
               className="btnLearn pointer grow"
-              onClick={() => setRoute("")}
+              onClick={() => setRoute(routes[ind])}
             >
               Learn more
             </button>
