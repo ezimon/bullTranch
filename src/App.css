@@ -571,3 +571,12 @@
   width: 100%;
   z-index: -100;
 }
+
+@media screen and (max-width: 767px) {
+  .headerLogo {
+    left: -100rem !important;
+  }
+  .tabs {
+    float: none;
+  }
+}
