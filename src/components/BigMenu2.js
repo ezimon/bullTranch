@@ -7,7 +7,7 @@ import { Transition } from "react-transition-group";
 import { gsap } from "gsap";
 import styled from "styled-components";
 
-export const BigMenu2 = ({ setRoute }) => {
+export const BigMenu2 = ({ setRoute, ratio }) => {
   const routes = ["livestock", "agriculture", "apiculture", "hydroponic"];
   const [prog, setProg] = useState(0);
   const BgImgs = [liveBG, agriBG, apiBG, hydroBG];
@@ -41,21 +41,20 @@ export const BigMenu2 = ({ setRoute }) => {
     setP(ps[ind]);
     seth1(h1s[ind]);
     setProg(0);
-    
+
     const interval = setInterval(() => {
       setProg((prog) => prog + seconds / (seconds * 10));
     }, seconds);
     return () => clearInterval(interval);
   }, [ind]);
-  
+
   const [bgAnim, setBgAnim] = useState(false);
 
   useEffect(() => {
     setBgImg(BgImgs[ind]);
-    prog > 100 ? (ind === 3 ? setInd(0) : setInd(ind + 1)) : setInd(ind);
+    prog >= 100 ? (ind === 3 ? setInd(0) : setInd(ind + 1)) : setInd(ind);
 
     prog >= 95 || prog <= 5 ? setBgAnim(true) : setBgAnim(false);
-
   }, [prog]);
 
   let className = "flash";
@@ -63,7 +62,9 @@ export const BigMenu2 = ({ setRoute }) => {
   return (
     <div>
       <div className={bgAnim ? (className = "flash") : (className = "")}></div>
-      <img src={bgImg} className="bgImg" />
+
+      {ratio < .65 ? <img src={bgImg} className="bgImg" /> : <img src={liveBG} className="bgImgRes" />}
+
       <div className="menuCont tc">
         <div className="textCarouselCont tc">
           <div className="textCarouselBG">

@@ -164,6 +164,13 @@
   align-items: stretch;
 }
 
+.menu1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
 /* .menu:hover {
   cursor: pointer;
 } */
@@ -251,6 +258,8 @@
   top: 0rem;
   position: fixed;
   z-index: -100;
+  min-height: 940px;
+  width: auto;
 }
 
 .homeBG {
@@ -398,6 +407,22 @@
   vertical-align: middle;
 }
 
+.Mtitle1 {
+  position: relative;
+  color: whitesmoke;
+  font-size: 2rem;
+  border-style: solid;
+  border-width: 2px 0 2px 0;
+  border-color: rgb(0, 0, 0);
+  margin: 0.7rem;
+}
+
+.menu1 {
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+}
+
 .Mtitle2 {
   position: relative;
   bottom: -80%;
@@ -537,4 +562,12 @@
   50% {
     opacity: 1;
   }
+}
+
+.bgImgRes {
+  top: 0rem;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -100;
 }

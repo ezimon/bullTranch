@@ -17,14 +17,14 @@ function App() {
 
   const [route, setRoute] = useState("home");
 
-  const home = <Home setRoute={setRoute} route={route} />;
-  const about = <About setRoute={setRoute} />;
-  const contact = <Contact setRoute={setRoute} />;
+  const home = <Home setRoute={setRoute} route={route} ratio={ratio} />;
+  const about = <About setRoute={setRoute} ratio={ratio} />;
+  const contact = <Contact setRoute={setRoute} ratio={ratio} />;
 
-  const apiculture = <Apiculture setRoute={setRoute} route={route} />;
-  const agriculture = <Agriculture setRoute={setRoute} route={route} />;
-  const hydroponic = <Hydroponic setRoute={setRoute} route={route} />;
-  const livestock = <Livestock setRoute={setRoute} route={route} />;
+  const apiculture = <Apiculture setRoute={setRoute} route={route} ratio={ratio} />;
+  const agriculture = <Agriculture setRoute={setRoute} route={route} ratio={ratio} />;
+  const hydroponic = <Hydroponic setRoute={setRoute} route={route} ratio={ratio} />;
+  const livestock = <Livestock setRoute={setRoute} route={route} ratio={ratio} />;
 
   let component;
   switch (route) {
