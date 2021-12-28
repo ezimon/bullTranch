@@ -88,16 +88,7 @@
   height: 175%;
   margin-left: -1rem;
   float: left;
-
-  /* -webkit-filter: drop-shadow(5px 5px 5px #222 ); */
-  filter: drop-shadow(15px 15px 10px rgb(101, 119, 85));
-
-  /* -webkit-box-shadow: 0px 28px 50px 5px rgba(0,0,0,0.59); 
-box-shadow: 0px 28px 50px 5px rgba(0,0,0,0.59); */
-
-  /* border-radius: 0 2rem 2rem 2rem; */
-  /* background-image: linear-gradient(to top left, rgba(255, 255, 255, 0), #17221ec9),
-    none; */
+  filter: drop-shadow(15px 15px 10px rgba(101, 119, 85, 0.863));
 }
 
 .menuLogo {
@@ -260,8 +251,6 @@ box-shadow: 0px 28px 50px 5px rgba(0,0,0,0.59); */
   top: 0rem;
   position: fixed;
   z-index: -100;
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .homeBG {
@@ -377,7 +366,6 @@ box-shadow: 0px 28px 50px 5px rgba(0,0,0,0.59); */
   font-size: 1.75em !important;
 }
 
-
 .progCont {
   height: 1.25%;
   width: 100%;
@@ -396,7 +384,7 @@ box-shadow: 0px 28px 50px 5px rgba(0,0,0,0.59); */
   height: 100%;
   width: 25%;
   border-style: solid;
-  border-width: 0 .3px 0 0;
+  border-width: 0 0.3px 0 0;
   border-color: rgba(191, 191, 191, 0.863);
   background-image: url(./assets/bigMenu/transparent.png);
   transition: background-image 0.7s;
@@ -523,4 +511,15 @@ box-shadow: 0px 28px 50px 5px rgba(0,0,0,0.59); */
   border-radius: 4px;
   padding: 0.5rem;
   background-color: white;
+}
+
+.flash {
+  position: absolute;
+  z-index: 1001;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  -webkit-box-shadow: inset 0px 0px 400px 1000px rgba(255, 255, 255, 1);
+  -moz-box-shadow: inset 0px 0px 400px 1000px rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 3000px 400px rgba(255, 255, 255, 1);
 }

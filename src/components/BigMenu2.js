@@ -1,18 +1,15 @@
 import React, { useEffect, useState } from "react";
-import Typical from "react-typical";
-import BackgroundSlider from "react-background-slider";
 import apiBG from "../assets/bigMenu/apiBG.png";
 import agriBG from "../assets/bigMenu/agriBG.png";
 import liveBG from "../assets/bigMenu/liveBG.jpg";
 import hydroBG from "../assets/bigMenu/hydroBG.webp";
+import { Transition } from "react-transition-group";
+import { gsap } from "gsap";
+import styled from "styled-components";
 
 export const BigMenu2 = ({ setRoute }) => {
   const routes = ["livestock", "agriculture", "apiculture", "hydroponic"];
-
   const [prog, setProg] = useState(0);
-
-  const [menuRoute, setMenuRoute] = useState();
-
   const BgImgs = [liveBG, agriBG, apiBG, hydroBG];
   const [bgImg, setBgImg] = useState(liveBG);
 
@@ -34,27 +31,33 @@ export const BigMenu2 = ({ setRoute }) => {
   const [p, setP] = useState();
   const [h1, seth1] = useState();
 
-  const pause = () => {};
-
   const seconds = 10;
 
   useEffect(() => {
-    window.setTimeout(() => {
-      ind === 3 ? setInd(0) : setInd(ind + 1);
-    }, seconds * 1000);
+    // window.setTimeout(() => {
+    // ind === 3 ? setInd(0) : setInd(ind + 1);
+    // }, seconds * 1000);
 
     setP(ps[ind]);
     seth1(h1s[ind]);
     setProg(0);
+
     const interval = setInterval(() => {
       setProg((prog) => prog + seconds / (seconds * 10));
     }, seconds);
     return () => clearInterval(interval);
   }, [ind]);
 
+  useEffect(() => {
+    setBgImg(BgImgs[ind]);
+    prog > 100 ? (ind === 3 ? setInd(0) : setInd(ind + 1)) : setInd(ind)
+  }, [prog]);
+
+
   return (
     <div>
-      <img src={BgImgs[ind]} className="bgImg" />
+      <div className="flash"></div>
+      <img src={bgImg} className="bgImg" />
       <div className="menuCont tc">
         <div className="textCarouselCont tc">
           <div className="textCarouselBG">
