@@ -41,22 +41,28 @@ export const BigMenu2 = ({ setRoute }) => {
     setP(ps[ind]);
     seth1(h1s[ind]);
     setProg(0);
-
+    
     const interval = setInterval(() => {
       setProg((prog) => prog + seconds / (seconds * 10));
     }, seconds);
     return () => clearInterval(interval);
   }, [ind]);
+  
+  const [bgAnim, setBgAnim] = useState(false);
 
   useEffect(() => {
     setBgImg(BgImgs[ind]);
-    prog > 100 ? (ind === 3 ? setInd(0) : setInd(ind + 1)) : setInd(ind)
+    prog > 100 ? (ind === 3 ? setInd(0) : setInd(ind + 1)) : setInd(ind);
+
+    prog >= 95 || prog <= 5 ? setBgAnim(true) : setBgAnim(false);
+
   }, [prog]);
 
+  let className = "flash";
 
   return (
     <div>
-      <div className="flash"></div>
+      <div className={bgAnim ? (className = "flash") : (className = "")}></div>
       <img src={bgImg} className="bgImg" />
       <div className="menuCont tc">
         <div className="textCarouselCont tc">
