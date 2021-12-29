@@ -12,7 +12,6 @@ import { Livestock } from "./components/Livestock";
 import useWindowDimensions from "./components/ScreenWidth";
 import { Header1 } from "./components/Header1";
 
-
 function App() {
   const { height, width } = useWindowDimensions();
   const ratio = height / width;
@@ -23,10 +22,18 @@ function App() {
   const about = <About setRoute={setRoute} ratio={ratio} route={route} />;
   const contact = <Contact setRoute={setRoute} ratio={ratio} route={route} />;
 
-  const apiculture = <Apiculture setRoute={setRoute} route={route} ratio={ratio} />;
-  const agriculture = <Agriculture setRoute={setRoute} route={route} ratio={ratio} />;
-  const hydroponic = <Hydroponic setRoute={setRoute} route={route} ratio={ratio} />;
-  const livestock = <Livestock setRoute={setRoute} route={route} ratio={ratio} />;
+  const apiculture = (
+    <Apiculture setRoute={setRoute} route={route} ratio={ratio} />
+  );
+  const agriculture = (
+    <Agriculture setRoute={setRoute} route={route} ratio={ratio} />
+  );
+  const hydroponic = (
+    <Hydroponic setRoute={setRoute} route={route} ratio={ratio} />
+  );
+  const livestock = (
+    <Livestock setRoute={setRoute} route={route} ratio={ratio} />
+  );
 
   let component;
   switch (route) {
@@ -58,8 +65,13 @@ function App() {
 
   return (
     <div className="App">
+      <div className="black"></div>
       {/* {'ratio: '+ratio} */}
-      {ratio < .65 ? <Header setRoute={setRoute} ratio={ratio} /> : <Header1 setRoute={setRoute} ratio={ratio} />}
+      {ratio < 0.65 ? (
+        <Header setRoute={setRoute} ratio={ratio} />
+      ) : (
+        <Header1 setRoute={setRoute} ratio={ratio} />
+      )}
       {component}
       {/* <Footer setRoute={setRoute} route={route} /> */}
     </div>

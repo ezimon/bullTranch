@@ -526,11 +526,11 @@
   display: table-cell;
   vertical-align: middle;
   padding: 13% 0 20% 0;
-  animation: fadeIn 1s linear;
-  -webkit-animation: fadeIn 1s linear;
-  -moz-animation: fadeIn 1s linear;
-  -o-animation: fadeIn 1s linear;
-  -ms-animation: fadeIn 1s linear;
+  animation: fadeIn .5s linear;
+  -webkit-animation: fadeIn .5s linear;
+  -moz-animation: fadeIn .5s linear;
+  -o-animation: fadeIn .5s linear;
+  -ms-animation: fadeIn .5s linear;
 }
 
 .textCarouselBG {
@@ -580,6 +580,14 @@
 
 .selctd {
   padding-right: 0.5rem;
+}
+
+.black {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: beige;
+  z-index: -1000;
 }
 
 .btnLearn {
@@ -648,10 +656,9 @@
     height: 6em;
     background-image: none;
   }
-  /* .App {
-    background-image: url(./assets/bigMenu/liveMask.png);
-    background-size: cover;
-  } */
+  .black {
+    background-image: url(./assets/bigMenu/liveBG.jpg)
+  }
 }
 
 .menu1 {

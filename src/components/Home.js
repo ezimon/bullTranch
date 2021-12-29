@@ -4,7 +4,6 @@ import { BigMenu2 } from "./BigMenu2";
 import { BigMenu1 } from "./BigMenu1";
 
 export const Home = ({ setRoute, route, ratio }) => {
-  console.log(ratio);
   return (
     <div>
       {ratio < 0.84 ? (

@@ -27,6 +27,9 @@ export const About = ({ setRoute, route }) => {
             food and fiber for the rest.
             <br />
             <br />
+            <br />
+            <br />
+            <br />
           </p>
         </div>
         <Footer setRoute={setRoute} route={route} />
