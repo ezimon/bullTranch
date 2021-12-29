@@ -1,7 +1,7 @@
 import React from "react";
 import mainlogo from "../assets/logo.png";
 
-export const Header = ({ setRoute, ratio }) => {
+export const Header = ({ setRoute, display }) => {
   return (
     <div className="header">
         <img

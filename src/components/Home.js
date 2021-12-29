@@ -3,13 +3,13 @@ import { BigMenu } from "./BigMenu";
 import { BigMenu2 } from "./BigMenu2";
 import { BigMenu1 } from "./BigMenu1";
 
-export const Home = ({ setRoute, route, ratio }) => {
+export const Home = ({ setRoute, route, display }) => {
   return (
     <div>
-      {ratio < 0.84 ? (
-        <BigMenu2 setRoute={setRoute} route={route} ratio={ratio} />
+      {display === 'Htablet' ? (
+        <BigMenu2 setRoute={setRoute} route={route} display={display} />
       ) : (
-        <BigMenu1 setRoute={setRoute} route={route} ratio={ratio} />
+        <BigMenu1 setRoute={setRoute} route={route} display={display} />
       )}
     </div>
   );

@@ -7,7 +7,7 @@ import { Transition } from "react-transition-group";
 import { gsap } from "gsap";
 import styled from "styled-components";
 
-export const BigMenu2 = ({ setRoute, ratio }) => {
+export const BigMenu2 = ({ setRoute, display }) => {
   const routes = ["livestock", "agriculture", "apiculture", "hydroponic"];
   const [prog, setProg] = useState(0);
   const BgImgs = [liveBG, agriBG, apiBG, hydroBG];
@@ -63,7 +63,7 @@ export const BigMenu2 = ({ setRoute, ratio }) => {
     <div>
       {/* <div className={bgAnim ? (className = "flash") : (className = "")}></div> */}
 
-      {ratio <= 0.65 ? (
+      {display === 'desktop' ? (
         bgAnim ? null : (
           <img src={bgImg} className="bgImg" />
         )

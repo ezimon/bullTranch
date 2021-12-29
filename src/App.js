@@ -15,6 +15,19 @@ import { Header1 } from "./components/Header1";
 function App() {
   const { height, width } = useWindowDimensions();
   const ratio = height / width;
+  const [display, setDisplay] = useState("");
+
+  useEffect(() => {
+    ratio < 0.63
+      ? setDisplay("desktop")
+      : ratio > 0.63 && ratio < 0.83
+      ? setDisplay("Htablet")
+      : ratio > 0.83 && ratio < 1.17
+      ? setDisplay("Vtablet")
+      : ratio < 1.17
+      ? setDisplay("phone")
+      : setDisplay("desktop");
+  }, [ratio]);
 
   const [route, setRoute] = useState("home");
 
@@ -22,21 +35,23 @@ function App() {
     window.scrollTo(0, 0);
   }, [route]);
 
-  const home = <Home setRoute={setRoute} route={route} ratio={ratio} />;
-  const about = <About setRoute={setRoute} ratio={ratio} route={route} />;
-  const contact = <Contact setRoute={setRoute} ratio={ratio} route={route} />;
+  const home = <Home setRoute={setRoute} route={route} display={display} />;
+  const about = <About setRoute={setRoute} display={display} route={route} />;
+  const contact = (
+    <Contact setRoute={setRoute} display={display} route={route} />
+  );
 
   const apiculture = (
-    <Apiculture setRoute={setRoute} route={route} ratio={ratio} />
+    <Apiculture setRoute={setRoute} route={route} display={display} />
   );
   const agriculture = (
-    <Agriculture setRoute={setRoute} route={route} ratio={ratio} />
+    <Agriculture setRoute={setRoute} route={route} display={display} />
   );
   const hydroponic = (
-    <Hydroponic setRoute={setRoute} route={route} ratio={ratio} />
+    <Hydroponic setRoute={setRoute} route={route} display={display} />
   );
   const livestock = (
-    <Livestock setRoute={setRoute} route={route} ratio={ratio} />
+    <Livestock setRoute={setRoute} route={route} display={display} />
   );
 
   let component;
@@ -67,33 +82,10 @@ function App() {
       break;
   }
 
-  const [display, setDisplay] = useState("");
-
-  useEffect(() => {
-    ratio < 0.63
-      ? setDisplay("desktop")
-      : ratio > 0.63 && ratio < 0.83
-      ? setDisplay("Htablet")
-      : ratio > 0.83 && ratio < 1.17
-      ? setDisplay("Vtablet")
-      : ratio < 1.17
-      ? setDisplay("phone")
-      : setDisplay(display);
-  }, [ratio]);
-
   return (
     <div className="App">
       <div className="black"></div>
-      {"ratio: " + ratio}
-      <br />
-      {"width: " + width}
-      <br />
-      {"display: " + display}
-      {ratio < 0.65 ? (
-        <Header setRoute={setRoute} ratio={ratio} />
-      ) : (
-        <Header1 setRoute={setRoute} ratio={ratio} />
-      )}
+      <Header setRoute={setRoute} display={display} />
       {component}
       {/* <Footer setRoute={setRoute} route={route} /> */}
     </div>
