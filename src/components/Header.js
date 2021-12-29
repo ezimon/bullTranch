@@ -3,12 +3,12 @@ import mainlogo from "../assets/logo.png";
 
 export const Header = ({ setRoute, ratio }) => {
   return (
-    <div className="header tc">
+    <div className="header">
         <img
           src={mainlogo}
           onClick={() => setRoute("home")}
           alt="Bull T Ranch"
-          className="headerLogo1 grow"
+          className="headerLogo grow"
         />
       <ul className="tabs">
         <b>

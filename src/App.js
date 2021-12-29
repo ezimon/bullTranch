@@ -20,8 +20,8 @@ function App() {
   const [route, setRoute] = useState("home");
 
   const home = <Home setRoute={setRoute} route={route} ratio={ratio} />;
-  const about = <About setRoute={setRoute} ratio={ratio} />;
-  const contact = <Contact setRoute={setRoute} ratio={ratio} />;
+  const about = <About setRoute={setRoute} ratio={ratio} route={route} />;
+  const contact = <Contact setRoute={setRoute} ratio={ratio} route={route} />;
 
   const apiculture = <Apiculture setRoute={setRoute} route={route} ratio={ratio} />;
   const agriculture = <Agriculture setRoute={setRoute} route={route} ratio={ratio} />;
@@ -58,10 +58,10 @@ function App() {
 
   return (
     <div className="App">
-      {/* {'ratio:'+ratio} */}
+      {'ratio:'+ratio}
       {ratio < .65 ? <Header setRoute={setRoute} ratio={ratio} /> : <Header1 setRoute={setRoute} ratio={ratio} />}
       {component}
-      {/* <Footer setRoute={setRoute} /> */}
+      {/* <Footer setRoute={setRoute} route={route} /> */}
     </div>
   );
 }

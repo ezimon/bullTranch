@@ -215,6 +215,8 @@
 }
 
 .footer {
+  left: 0;
+  right: 0;
   margin-top: 0;
   background-color: #334d45;
   display: flex;
@@ -223,6 +225,15 @@
   padding-bottom: 1em;
   bottom: 0;
 }
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 
 .spBody {
   margin-top: 0;
@@ -547,6 +558,9 @@
   }
 }
 
+
+/* ----- RESPONSIVE ----- */
+
 .bgImgRes {
   top: 0rem;
   position: absolute;
@@ -554,8 +568,6 @@
   width: 100%;
   z-index: -100;
 }
-
-/* ----- RESPONSIVE ----- */
 
 @media screen and (max-width: 767px) {
   .headerLogo {
@@ -571,6 +583,10 @@
     height: 6em;
     background-image: none;
   }
+  /* .App {
+    background-image: url(./assets/bigMenu/liveMask.png);
+    background-size: cover;
+  } */
 }
 
 .menu1 {
@@ -595,3 +611,4 @@
   position: fixed;
   height: 100%;
 }
+

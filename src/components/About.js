@@ -2,7 +2,7 @@ import React from "react";
 import liveBG from "../assets/bigMenu/agriBG.png";
 import { Footer } from "./Footer";
 
-export const About = ({ setRoute}) => {
+export const About = ({ setRoute, route}) => {
   return (
     <div>
         <img alt="" src={liveBG} className="bgImg" />
@@ -30,7 +30,7 @@ export const About = ({ setRoute}) => {
             </p>
           </div>
       </div>
-      <Footer setRoute={setRoute} />
+      <Footer setRoute={setRoute} route={route} />
     </div>
   );
 };

@@ -54,16 +54,20 @@ export const BigMenu2 = ({ setRoute, ratio }) => {
     setBgImg(BgImgs[ind]);
     prog >= 100 ? (ind === 3 ? setInd(0) : setInd(ind + 1)) : setInd(ind);
 
-    prog >= 95 || prog <= 1 ? setBgAnim(true) : setBgAnim(false);
+    // prog >= 95 || prog <= 10 ? setBgAnim(true) : setBgAnim(false);
   }, [prog]);
 
-  let className = "flash";
+  let className = "";
 
   return (
     <div>
-      <div className={bgAnim ? (className = "flash") : (className = "")}></div>
+      {/* <div className={bgAnim ? (className = "flash") : (className = "")}></div> */}
 
-      {ratio < .65 ? <img src={bgImg} className="bgImg" /> : <img src={liveBG} className="bgImgRes" />}
+      {ratio <= 0.65 ? (
+        <img src={bgImg} className="bgImg" />
+      ) : (
+        <img src={liveBG} className="bgImgRes" />
+      )}
 
       <div className="menuCont tc">
         <div className="textCarouselCont tc">

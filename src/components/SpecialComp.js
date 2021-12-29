@@ -58,7 +58,7 @@ export const SpecialComp = () => {
           </div>
         </div>
       </div>
-      <Footer setRoute={setRoute} />
+      <Footer setRoute={setRoute} route={route} />
     </div>
   );
 };

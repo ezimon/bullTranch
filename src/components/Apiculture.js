@@ -58,7 +58,7 @@ export const Apiculture = ({ setRoute, route }) => {
         <br />
         <br />
         <hr />
-        <Footer setRoute={setRoute} />
+        <Footer setRoute={setRoute} route={route} />
       </div>
     </div>
   );
