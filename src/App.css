@@ -19,6 +19,51 @@
   }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes slide-fwd-center {
   0% {
     -webkit-transform: translateZ(0);
@@ -264,6 +309,11 @@
   z-index: -100;
   min-height: 940px;
   width: auto;
+  animation: fadeIn .5s linear;
+  -webkit-animation: fadeIn .5s linear;
+  -moz-animation: fadeIn .5s linear;
+  -o-animation: fadeIn .5s linear;
+  -ms-animation: fadeIn .5s linear;
 }
 
 .homeBG {
@@ -476,10 +526,11 @@
   display: table-cell;
   vertical-align: middle;
   padding: 13% 0 20% 0;
-  /* background-color: #334d4557; */
-  -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: fadeIn 1s linear;
+  -webkit-animation: fadeIn 1s linear;
+  -moz-animation: fadeIn 1s linear;
+  -o-animation: fadeIn 1s linear;
+  -ms-animation: fadeIn 1s linear;
 }
 
 .textCarouselBG {
@@ -528,7 +579,7 @@
 }
 
 .selctd {
-  padding-right: .5rem;
+  padding-right: 0.5rem;
 }
 
 .btnLearn {

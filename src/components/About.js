@@ -2,34 +2,34 @@ import React from "react";
 import liveBG from "../assets/bigMenu/agriBG.png";
 import { Footer } from "./Footer";
 
-export const About = ({ setRoute, route}) => {
+export const About = ({ setRoute, route }) => {
   return (
     <div>
-        <img alt="" src={liveBG} className="bgImg" />
+      <img alt="" src={liveBG} className="bgImg" />
       <div className="shadowImg tc">
-          <h1 className="subtitle">About us:</h1>
-          <div className="width-70">
-            <p className="paragraph subP subPP">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              semper felis at libero scelerisque eleifend. Fusce suscipit
-              fermentum elit, consectetur facilisis lacus semper tempus.
-              Phasellus in laoreet odio. Phasellus non blandit dui. Duis
-              tristique urna lacus, ut mattis nisi lacinia sit amet. Mauris
-              elementum tincidunt enim a pellentesque. Vivamus ut nisi ut risus
-              blandit porta ut in risus. Mauris dictum erat vel nulla posuere,
-              vel venenatis leo ornare. Vivamus dui urna, maximus ac cursus et,
-              dignissim sit amet quam. Aenean vulputate vel lorem porttitor
-              vulputate. Proin aliquam leo sit amet magna elementum, quis
-              faucibus arcu vehicula. Nam eu nunc ut ex vulputate ullamcorper.
-              Aenean finibus ante vitae mauris maximus, vestibulum mollis velit
-              luctus. Duis a bibendum neque. Integer vel mi elementum mi rhoncus
-              porta quis eu ligula. Donec posuere aliquet felis sed pretium.
-              Praesent eget dolor volutpat, consectetur massa sed, vulputate
-              urna. Proin non leo eget mauris euismod maximus. Aliquam blandit
-              leo at erat porta aliquet. Vestibulum volutpat ullamcorper.
-            </p>
-          </div>
-      <Footer setRoute={setRoute} route={route} />
+        <h1 className="subtitle">About us:</h1>
+        <div className="width-70">
+          <p className="paragraph subP subPP">
+            Nestled in the Black Hills of Wyoming with more than 250 acres of
+            land; Bull T Ranch is a hybrid and new business model that is
+            focused on our commitment to sustainable agriculture in the
+            production of meat, dairy and grains with our goal of not just
+            preserving the land but improving the methods of agriculture to
+            ensure we will have a tomorrow for the future generations to come.
+            <br />
+            <br />
+            Our hope is that the price Americans pay for food will someday
+            reflect the real cost of producing it: the stewardship required to
+            make sure that the land will remain fertile and productive, the
+            health and benefits necessary to maintain an active labor force, a
+            strong rural community, and a profit margin that will provide the
+            incentive for people like us to spend every waking moment producing
+            food and fiber for the rest.
+            <br />
+            <br />
+          </p>
+        </div>
+        <Footer setRoute={setRoute} route={route} />
       </div>
     </div>
   );

@@ -54,7 +54,7 @@ export const BigMenu2 = ({ setRoute, ratio }) => {
     setBgImg(BgImgs[ind]);
     prog >= 100 ? (ind === 3 ? setInd(0) : setInd(ind + 1)) : setInd(ind);
 
-    // prog >= 95 || prog <= 10 ? setBgAnim(true) : setBgAnim(false);
+    prog >= 100 || prog <= 1 ? setBgAnim(true) : setBgAnim(false);
   }, [prog]);
 
   let className = "";
@@ -64,26 +64,30 @@ export const BigMenu2 = ({ setRoute, ratio }) => {
       {/* <div className={bgAnim ? (className = "flash") : (className = "")}></div> */}
 
       {ratio <= 0.65 ? (
-        <img src={bgImg} className="bgImg" />
+        bgAnim ? null : (
+          <img src={bgImg} className="bgImg" />
+        )
       ) : (
         <img src={liveBG} className="bgImgRes" />
       )}
 
       <div className="menuCont tc">
-        <div className="textCarouselCont tc">
-          <div className="textCarouselBG">
-            <h2 className="carouselTitle">{h1}</h2>
-            <p className="carouselP tc">
-              <b>{p}</b>
-            </p>
-            <button
-              className="btnLearn pointer grow"
-              onClick={() => setRoute(routes[ind])}
-            >
-              Learn more
-            </button>
+        {bgAnim ? null : (
+          <div className="textCarouselCont tc">
+            <div className="textCarouselBG">
+              <h2 className="carouselTitle">{h1}</h2>
+              <p className="carouselP tc">
+                <b>{p}</b>
+              </p>
+              <button
+                className="btnLearn pointer grow"
+                onClick={() => setRoute(routes[ind])}
+              >
+                Learn more
+              </button>
+            </div>
           </div>
-        </div>
+        )}
 
         <div className="menu">
           <div className="menuItem" id={ind === 0 ? "hoverId" : "Mlive"}>
