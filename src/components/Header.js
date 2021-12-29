@@ -1,14 +1,14 @@
 import React from "react";
 import mainlogo from "../assets/logo.png";
 
-export const Header = ({ setRoute }) => {
+export const Header = ({ setRoute, ratio }) => {
   return (
-    <div className="header">
+    <div className="header tc">
         <img
           src={mainlogo}
           onClick={() => setRoute("home")}
           alt="Bull T Ranch"
-          className="headerLogo grow"
+          className="headerLogo1 grow"
         />
       <ul className="tabs">
         <b>

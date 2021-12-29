@@ -54,7 +54,7 @@ export const BigMenu2 = ({ setRoute, ratio }) => {
     setBgImg(BgImgs[ind]);
     prog >= 100 ? (ind === 3 ? setInd(0) : setInd(ind + 1)) : setInd(ind);
 
-    prog >= 95 || prog <= 5 ? setBgAnim(true) : setBgAnim(false);
+    prog >= 95 || prog <= 1 ? setBgAnim(true) : setBgAnim(false);
   }, [prog]);
 
   let className = "flash";

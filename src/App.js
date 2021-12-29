@@ -10,6 +10,8 @@ import { Agriculture } from "./components/Agriculture";
 import { Hydroponic } from "./components/Hydroponic";
 import { Livestock } from "./components/Livestock";
 import useWindowDimensions from "./components/ScreenWidth";
+import { Header1 } from "./components/Header1";
+
 
 function App() {
   const { height, width } = useWindowDimensions();
@@ -57,7 +59,7 @@ function App() {
   return (
     <div className="App">
       {/* {'ratio:'+ratio} */}
-      <Header setRoute={setRoute} ratio={ratio} />
+      {ratio < .65 ? <Header setRoute={setRoute} ratio={ratio} /> : <Header1 setRoute={setRoute} ratio={ratio} />}
       {component}
       {/* <Footer setRoute={setRoute} /> */}
     </div>
