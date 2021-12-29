@@ -586,7 +586,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: beige;
+  background-color: rgb(255, 253, 246);
   z-index: -1000;
 }
 
@@ -640,25 +640,6 @@
   height: 100%;
   width: 100%;
   z-index: -100;
-}
-
-@media screen and (max-width: 767px) {
-  .headerLogo {
-    display: none;
-  }
-  .tabs {
-    float: none;
-    display: none;
-  }
-  .header {
-    position: absolute;
-    width: 100%;
-    height: 6em;
-    background-image: none;
-  }
-  .black {
-    background-image: url(./assets/bigMenu/liveBG.jpg)
-  }
 }
 
 .menu1 {

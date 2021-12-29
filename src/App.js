@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import "tachyons";
 import { Header } from "./components/Header";
@@ -17,6 +17,10 @@ function App() {
   const ratio = height / width;
 
   const [route, setRoute] = useState("home");
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [route]);
 
   const home = <Home setRoute={setRoute} route={route} ratio={ratio} />;
   const about = <About setRoute={setRoute} ratio={ratio} route={route} />;
@@ -63,10 +67,28 @@ function App() {
       break;
   }
 
+  const [display, setDisplay] = useState("");
+
+  useEffect(() => {
+    ratio < 0.63
+      ? setDisplay("desktop")
+      : ratio > 0.63 && ratio < 0.83
+      ? setDisplay("Htablet")
+      : ratio > 0.83 && ratio < 1.17
+      ? setDisplay("Vtablet")
+      : ratio < 1.17
+      ? setDisplay("phone")
+      : setDisplay(display);
+  }, [ratio]);
+
   return (
     <div className="App">
       <div className="black"></div>
-      {/* {'ratio: '+ratio} */}
+      {"ratio: " + ratio}
+      <br />
+      {"width: " + width}
+      <br />
+      {"display: " + display}
       {ratio < 0.65 ? (
         <Header setRoute={setRoute} ratio={ratio} />
       ) : (
