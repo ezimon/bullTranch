@@ -30,14 +30,14 @@ export const Agriculture = ({ setRoute, route }) => {
             To Conserve and Rehabilitate the Land as it is Farmed.{" "}
           </h2>
           <p className="paragraph">
-            Regenerative agriculture leads to healthy soil, capable of producing
+            Regenerative agriculture leads to <b>healthy soil</b>, capable of producing
             high quality, nutrient dense food while simultaneously improving,
             rather than degrading land, and ultimately leading to productive
-            farms and healthy communities and economies. We use planting methods
+            farms and healthy communities and economies. We use <b>planting methods</b>
             that take as little moisture out of the soil as possible. Then, when
             the crops come off, the cattle immediately go on the fields. By
             doing this, nutrients and biology are infused back into our fields.
-            Not only does the land benefit, this also provides nutrients for the
+            Not only does the land benefit, this also <b>provides nutrients</b> for the
             cattle using crop aftermath.
           </p>
         </div>
@@ -49,7 +49,7 @@ export const Agriculture = ({ setRoute, route }) => {
             the loss of indigenous seeds and knowledge, pose a mortal threat to
             our future survival. According to soil scientists, at current rates
             of soil destruction (i.e. decarbonization, erosion, desertification,
-            chemical pollution), within 50 years we will not only suffer serious
+            chemical pollution), within <b>50 years</b> we will not only suffer serious
             damage to public health due to a qualitatively degraded food supply
             characterized by diminished nutrition and loss of important trace
             minerals, but we will literally no longer have enough arable topsoil
@@ -60,17 +60,13 @@ export const Agriculture = ({ setRoute, route }) => {
             Celsius, or halt the loss of biodiversity.
             <br />
             <br />
-            We support all agriculture and are proud to be a part of the farmers
-            and ranchers who provide food for our nation, as we continue to grow
+            <b>We support all agriculture and are proud to be a part of the farmers
+            and ranchers who provide food for our nation</b>, as we continue to grow
             in this practice of organic farming and ranching. We believe this
             practice is not only better for you, but also for the land. From
             beginning to finish, we raise our crops and cattle, on our ranch in
             North-East Wyoming.
           </p>
-          <br />
-          <br />
-          <br />
-          <br />
           <br />
           <br />
           <hr />

@@ -29,8 +29,8 @@ export const About = ({ setRoute, route}) => {
               leo at erat porta aliquet. Vestibulum volutpat ullamcorper.
             </p>
           </div>
-      </div>
       <Footer setRoute={setRoute} route={route} />
+      </div>
     </div>
   );
 };

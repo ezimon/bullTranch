@@ -19,24 +19,24 @@
   }
 }
 
-@-webkit-keyframes scale-down-center {
+@-webkit-keyframes slide-fwd-center {
   0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
   100% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
+    -webkit-transform: translateZ(160px);
+    transform: translateZ(160px);
   }
 }
-@keyframes scale-down-center {
+@keyframes slide-fwd-center {
   0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
   100% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
+    -webkit-transform: translateZ(160px);
+    transform: translateZ(160px);
   }
 }
 
@@ -228,12 +228,12 @@
 
 .absolute {
   position: absolute;
+  bottom: 0;
 }
 
 .relative {
   position: relative;
 }
-
 
 .spBody {
   margin-top: 0;
@@ -285,9 +285,9 @@
 }
 
 .width-70 {
-  width: 50%;
-  right: 50%;
-  transform: translateX(50%);
+  position: relative;
+  width: 60%;
+  left: 20%;
 }
 
 .spTitle {
@@ -302,7 +302,7 @@
 .paragraph {
   color: white;
   font-family: "Poppins";
-  letter-spacing: 0.14rem;
+  letter-spacing: 0.1rem;
   line-height: 22px;
 }
 
@@ -345,7 +345,7 @@
 .subtitle {
   font-style: normal;
   font-weight: 600;
-  color: #ffec82;
+  color: #fff1a1;
   font-size: 2.75em;
 }
 
@@ -476,8 +476,10 @@
   display: table-cell;
   vertical-align: middle;
   padding: 13% 0 20% 0;
-
   /* background-color: #334d4557; */
+  -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .textCarouselBG {
@@ -525,11 +527,24 @@
   border-width: 2px;
 }
 
+.selctd {
+  padding-right: .5rem;
+}
+
 .btnLearn {
-  border: none;
-  border-radius: 4px;
-  padding: 0.5rem;
-  background-color: white;
+  background-color: #699186;
+  border-width: 1px;
+  border-style: solid;
+  top: 50%;
+  display: inline;
+  color: white;
+  padding: 0.75em 1em;
+  border-radius: 5px;
+  margin-right: 1rem;
+  border-color: #ffec82;
+  -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .flash {
@@ -557,7 +572,6 @@
     opacity: 1;
   }
 }
-
 
 /* ----- RESPONSIVE ----- */
 
@@ -611,4 +625,3 @@
   position: fixed;
   height: 100%;
 }
-

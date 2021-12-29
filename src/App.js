@@ -58,7 +58,7 @@ function App() {
 
   return (
     <div className="App">
-      {'ratio:'+ratio}
+      {/* {'ratio: '+ratio} */}
       {ratio < .65 ? <Header setRoute={setRoute} ratio={ratio} /> : <Header1 setRoute={setRoute} ratio={ratio} />}
       {component}
       {/* <Footer setRoute={setRoute} route={route} /> */}

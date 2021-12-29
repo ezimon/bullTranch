@@ -37,38 +37,51 @@ export const Livestock = ({ setRoute, route }) => {
         <div className="width-70">
           <h1 className="subtitle">Benefits of Organic Livestock</h1>
           <p className="paragraph">
-            The nutritional quality of pasture-based products like eggs and milk
-            is higher, containing more omega-3s and fatty acids.
+            <ul>
+              <li>
+                The nutritional quality of pasture-based products like eggs and
+                milk is higher, containing more omega-3s and fatty acids.
+              </li>
+              <br />
+              <li>The soil improves as it's fertilized with manure.</li>
+              <br />
+              <li>
+                Since antibiotics are not allowed in organic production, the
+                risk of antibiotic resistance and “superbugs” is eliminated.
+              </li>
+              <br />
+              <li>
+                Grazing livestock can make use of marginal land not suitable for
+                growing crops.
+              </li>
+              <br />
+              <li>
+                Animals assist with weed management by eating or trampling
+                unwanted plants.
+              </li>
+              <br />
+              <li>
+                Livestock provide an additional income stream and help
+                distribute a farmer’s workload through the year.
+              </li>
+              <br />
+              <li>
+                Farmers have more flexibility when they raise animals. They can
+                choose to sell their crops directly or feed them to the animals
+                as market conditions and other factors shift.
+              </li>
+              <br />
+              <li>
+                Of all farming practices, pasture-based livestock operations
+                have the most potential to sequester carbon.
+              </li>
+            </ul>
             <br />
-            The soil improves as it's fertilized with manure.
             <br />
-            Since antibiotics are not allowed in organic production, the risk of
-            antibiotic resistance and “superbugs” is eliminated.
             <br />
-            Grazing livestock can make use of marginal land not suitable for
-            growing crops.
-            <br />
-            Animals assist with weed management by eating or trampling unwanted
-            plants.
-            <br />
-            Livestock provide an additional income stream and help distribute a
-            farmer’s workload through the year.
-            <br />
-            Farmers have more flexibility when they raise animals. They can
-            choose to sell their crops directly or feed them to the animals as
-            market conditions and other factors shift.
-            <br />
-            Of all farming practices, pasture-based livestock operations have
-            the most potential to sequester carbon.
           </p>
+          <hr />
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <hr />
         <Footer setRoute={setRoute} route={route} />
       </div>
     </div>
