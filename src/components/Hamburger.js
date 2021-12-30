@@ -12,7 +12,7 @@ export const Hamburger = ({ setRoute }) => {
     <div>
       <img src={ham} className="ham" alt="" onClick={() => setOpen(true)} />
       <Modal open={open} onClose={onCloseModal} center>
-        <ul className="">
+        <ul onClick={() => setOpen(false)}>
           <b>
             <li className="hammenu" onClick={() => setRoute("contact")}>
               Contact us
