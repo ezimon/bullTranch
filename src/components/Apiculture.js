@@ -4,6 +4,7 @@ import scroll from "../assets/mouse.png";
 import { Footer } from "./Footer";
 import { SpNav } from "./SpNav";
 import { SpNavSmall } from "./SpNavSmall";
+import { ApicultureSmall } from "./smallSPs/ApicultureSmall";
 
 export const Apiculture = ({ setRoute, route, display }) => {
   return (

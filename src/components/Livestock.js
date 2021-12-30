@@ -4,6 +4,7 @@ import scroll from "../assets/mouse.png";
 import { Footer } from "./Footer";
 import { SpNav } from "./SpNav";
 import { SpNavSmall } from "./SpNavSmall";
+import { LivestockSmall } from "./smallSPs/LivestockSmall";
 
 export const Livestock = ({ setRoute, route, display }) => {
   return (

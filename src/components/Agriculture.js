@@ -1,7 +1,7 @@
 import React from "react";
 import apiBG from "../assets/bigMenu/agriBG.png";
 import scroll from "../assets/mouse.png";
-import { AgricultureSmall } from "./AgricultureSmall";
+import { AgricultureSmall } from "./smallSPs/AgricultureSmall";
 import { Footer } from "./Footer";
 import { SpNav } from "./SpNav";
 

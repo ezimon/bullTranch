@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const AgricultureSmall = () => {
+export const ApicultureSmall = () => {
     return (
         <div>
-            
+            ApicultureSmall
         </div>
     )
 }

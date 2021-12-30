@@ -4,6 +4,7 @@ import scroll from "../assets/mouse.png";
 import { Footer } from "./Footer";
 import { SpNav } from "./SpNav";
 import { SpNavSmall } from "./SpNavSmall";
+import { HydroponicSmall } from "./smallSPs/HydroponicSmall";
 
 export const Hydroponic = ({ setRoute, route, display }) => {
   return (
