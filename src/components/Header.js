@@ -10,7 +10,7 @@ export const Header = ({ setRoute, display }) => {
         onClick={() => setRoute("home")}
         alt="Bull T Ranch"
         className={
-          display === "desktop" || display === "Htablet"
+          display === "desktop"
             ? "headerLogo grow"
             : "headerLogosmall pointer grow"
         }

@@ -3,9 +3,6 @@ import apiBG from "../assets/bigMenu/apiBG.png";
 import agriBG from "../assets/bigMenu/agriBG.png";
 import liveBG from "../assets/bigMenu/liveBG.jpg";
 import hydroBG from "../assets/bigMenu/hydroBG.webp";
-import { Transition } from "react-transition-group";
-import { gsap } from "gsap";
-import styled from "styled-components";
 
 export const BigMenu2 = ({ setRoute, display }) => {
   const routes = ["livestock", "agriculture", "apiculture", "hydroponic"];
@@ -31,13 +28,9 @@ export const BigMenu2 = ({ setRoute, display }) => {
   const [p, setP] = useState();
   const [h1, seth1] = useState();
 
-  const seconds = 10;
+  const seconds = 8;
 
   useEffect(() => {
-    // window.setTimeout(() => {
-    // ind === 3 ? setInd(0) : setInd(ind + 1);
-    // }, seconds * 1000);
-
     setP(ps[ind]);
     seth1(h1s[ind]);
     setProg(0);

@@ -123,7 +123,8 @@
   position: absolute;
   top: 0;
   height: 7rem;
-  margin-left: -1rem;
+  padding-top: 2%;
+  margin-left: -0.5rem;
   float: left;
   filter: drop-shadow(15px 15px 10px rgba(101, 119, 85, 0.863));
 }
@@ -331,8 +332,8 @@
 }
 
 .smallinput {
-margin: 0 15% 0 15%;
-width: 70%;
+  margin: 0 15% 0 15%;
+  width: 70%;
 }
 
 .formsmall {
@@ -343,7 +344,7 @@ width: 70%;
   margin: 10%;
   padding-bottom: 3em;
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #334d45),
-  none;
+    none;
 }
 
 .shadowImg {
@@ -583,13 +584,13 @@ width: 70%;
 }
 
 .carouselTitle {
-  font-size: 2.9rem;
+  font-size: 3.5vw;
   padding: 0.001rem 0 0.001rem 0;
 }
 
 .carouselP {
   padding: 0 20% 0 20%;
-  font-size: 1.15rem;
+  font-size: 1.4vw;
   letter-spacing: 0.11rem;
   line-height: 21px;
 }
@@ -640,7 +641,8 @@ width: 70%;
   top: 50%;
   display: inline;
   color: white;
-  padding: 0.75em 1em;
+  /* padding: 0.75em 1em; */
+  padding: 1% 1.5%;
   border-radius: 5px;
   margin-right: 1rem;
   border-color: #ffec82;
@@ -682,6 +684,11 @@ width: 70%;
   background-size: cover;
 }
 
+.bgsmall {
+  background-image: linear-gradient(to top, rgba(245, 246, 252, 0), rgb(255, 255, 255)),
+  url(./assets/bigMenu/liveBG.jpg);
+}
+
 .bgImgRes {
   top: 0rem;
   position: absolute;
@@ -714,9 +721,11 @@ width: 70%;
 }
 
 .ham {
-  height: 3rem;
-  float: right;
-  padding-right: 1rem;
+  position: fixed;
+  height: 120%;
+  right: 0;
+  padding-right: 6%;
+  padding-top: 4%;
 }
 
 .hammenu {
