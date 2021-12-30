@@ -5,7 +5,6 @@ import map from "../assets/icons/map.png";
 
 export const Footer = ({ setRoute, route }) => {
   return (
-    // {route === 'contact' || route === 'about' ? 'footer absolute' : 'footer relative'}
     <div className='footer'>
       <div className="iCont tc">
         <img alt="" src={tel} alt="" className="foIcon" />

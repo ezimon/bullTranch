@@ -1,51 +1,38 @@
 import React from "react";
 import mainlogo from "../assets/logo.png";
+import { Hamburger } from "./Hamburger";
 
 export const Header = ({ setRoute, display }) => {
   return (
     <div className="header">
+      <img
+        src={mainlogo}
+        onClick={() => setRoute("home")}
+        alt="Bull T Ranch"
+        className={
+          display === "desktop" || display === "Htablet"
+            ? "headerLogo grow"
+            : "headerLogosmall"
+        }
+      />
+
       {display === "desktop" || display === "Htablet" ? (
-        <img
-          src={mainlogo}
-          onClick={() => setRoute("home")}
-          alt="Bull T Ranch"
-          className="headerLogo grow"
-        />
-      ) : null}
-      <ul>
-        <b>
-          <li
-            className={
-              display === "desktop" || display === "Htablet"
-                ? "tab grow"
-                : "tabsmall"
-            }
-            onClick={() => setRoute("contact")}
-          >
-            Contact us
-          </li>
-          <li
-            className={
-              display === "desktop" || display === "Htablet"
-                ? "tab grow"
-                : "tabsmall"
-            }
-            onClick={() => setRoute("about")}
-          >
-            Who we are
-          </li>
-          <li
-            className={
-              display === "desktop" || display === "Htablet"
-                ? "tab grow"
-                : "tabsmall"
-            }
-            onClick={() => setRoute("home")}
-          >
-            Home
-          </li>
-        </b>
-      </ul>
+        <ul className="tabs">
+          <b>
+            <li className="tab grow" onClick={() => setRoute("contact")}>
+              Contact us
+            </li>
+            <li className="tab grow" onClick={() => setRoute("about")}>
+              Who we are
+            </li>
+            <li className="tab grow" onClick={() => setRoute("home")}>
+              Home
+            </li>
+          </b>
+        </ul>
+      ) : (
+        <Hamburger setRoute={setRoute} />
+      )}
     </div>
   );
 };

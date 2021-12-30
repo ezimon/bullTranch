@@ -87,7 +87,6 @@ function App() {
       <Header setRoute={setRoute} display={display} />
       <p style={{ float: "right", padding: "1rem" }}>display: {display}</p>
       {component}
-      {/* <Footer setRoute={setRoute} route={route} /> */}
     </div>
   );
 }

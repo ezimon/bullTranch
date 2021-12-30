@@ -119,6 +119,15 @@
   filter: drop-shadow(15px 15px 10px rgba(101, 119, 85, 0.863));
 }
 
+.headerLogosmall {
+  position: absolute;
+  top: 0;
+  height: 7rem;
+  margin-left: -1rem;
+  float: left;
+  filter: drop-shadow(15px 15px 10px rgba(101, 119, 85, 0.863));
+}
+
 .menuLogo {
   position: absolute;
   height: 7rem;
@@ -138,24 +147,11 @@
   top: 0px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   z-index: 100;
-  margin: 0;
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0), #1c5040c7),
     none;
+  margin: 0;
   -webkit-animation: slide-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  display: inline;
-}
-
-.tabsmall {
-  background-color: #699186;
-  border-width: 1px;
-  border-style: solid;
-  display: flex;
-  justify-content: space-evenly;
-  color: #fff5bc;
-  padding: 0.75em 1em;
-  border-radius: 5px;
-  width: 15%;
 }
 
 .tabs {
@@ -692,4 +688,10 @@
 .headerLogo1 {
   position: fixed;
   height: 100%;
+}
+
+.ham {
+  height: 3rem;
+  float: right;
+  padding-right: 1rem;
 }
