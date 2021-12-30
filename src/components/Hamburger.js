@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Modal } from "react-responsive-modal";
 import ham from "../assets/icons/ham.png";
-import "react-responsive-modal/styles.css";
+import "./modal.css";
 
 export const Hamburger = ({ setRoute }) => {
   const [open, setOpen] = useState(false);
@@ -12,15 +12,15 @@ export const Hamburger = ({ setRoute }) => {
     <div>
       <img src={ham} className="ham" alt="" onClick={() => setOpen(true)} />
       <Modal open={open} onClose={onCloseModal} center>
-        <ul className="tabs">
+        <ul className="">
           <b>
-            <li className="tab grow" onClick={() => setRoute("contact")}>
+            <li className="hammenu" onClick={() => setRoute("contact")}>
               Contact us
             </li>
-            <li className="tab grow" onClick={() => setRoute("about")}>
+            <li className="hammenu" onClick={() => setRoute("about")}>
               Who we are
             </li>
-            <li className="tab grow" onClick={() => setRoute("home")}>
+            <li className="hammenu" onClick={() => setRoute("home")}>
               Home
             </li>
           </b>

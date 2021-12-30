@@ -695,3 +695,12 @@
   float: right;
   padding-right: 1rem;
 }
+
+.hammenu {
+  margin: 1em 60% 1em 0;
+  padding: .5rem;
+  border-radius: 5px;
+  list-style-type: none;
+  background-color:#334d45;
+  margin-left: -1rem;
+}
