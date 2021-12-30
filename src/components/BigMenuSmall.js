@@ -7,23 +7,24 @@ export const BigMenuSmall = ({ setRoute }) => {
       <br />
       <br />
       <br />
-      <h1>
-        Welcome to <b>Bull T Ranch</b>
-        <br />
-        we offer:
+      <br />
+      <h1 className="conTitle bigger">
+        <b>Our services:</b>
       </h1>
       <br />
-      <div onClick={() => setRoute("apiculture")}>
-        <h1 className="pointer grow">Apiculture</h1>
-      </div>
-      <div onClick={() => setRoute("hydroponic")}>
-        <h1 className="pointer grow">Hydroponic System</h1>
-      </div>
-      <div onClick={() => setRoute("agriculture")}>
-        <h1 className="pointer grow">Regenerative Agriculture</h1>
-      </div>
-      <div onClick={() => setRoute("livestock")}>
-        <h1 className="pointer grow">Organic Livestock</h1>
+      <div className="width-70">
+        <div onClick={() => setRoute("hydroponic")} className="smallmenutab grow pointer" id="hydrow">
+          <h2 className="pointer">Hydroponic System</h2>
+        </div>
+        <div onClick={() => setRoute("livestock")} className="smallmenutab grow pointer" id="livew">
+          <h2 className="pointer">Organic Livestock</h2>
+        </div>
+        <div onClick={() => setRoute("apiculture")} className="smallmenutab grow pointer" id="apiw">
+          <h2 className="pointer">Apiculture</h2>
+        </div>
+        <div onClick={() => setRoute("agriculture")} className="smallmenutab grow pointer" id="agriw">
+          <h2 className="pointer">Regenerative Agriculture</h2>
+        </div>
       </div>
     </div>
   );

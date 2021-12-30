@@ -10,6 +10,7 @@ import { Agriculture } from "./components/Agriculture";
 import { Hydroponic } from "./components/Hydroponic";
 import { Livestock } from "./components/Livestock";
 import useWindowDimensions from "./components/ScreenWidth";
+import apiBG from "./assets/bigMenu/agriMask.png";
 
 function App() {
   const { height, width } = useWindowDimensions();
@@ -83,6 +84,12 @@ function App() {
 
   return (
     <div className="App">
+      {(route === "home" || route === "contact" || route === "about") ===
+      (display === "phone" || display === "Vtablet" ? true : false) ? (
+        <div className="shadowImg">
+          <img src={apiBG} alt="" className="bgImgRes" />
+        </div>
+      ) : null}
       <div className="black"></div>
       <Header setRoute={setRoute} display={display} />
       {/* <p style={{ float: "right", padding: "1rem" }}>display: {display}</p> */}

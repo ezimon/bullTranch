@@ -14,15 +14,9 @@ export const Agriculture = ({ setRoute, route, display }) => {
           : "special tc"
       }
     >
-      {display === "desktop" || display === "Htablet" ? (
-        <SpNav setRoute={setRoute} route={route} />
-      ) : (
-        <SpNavSmall setRoute={setRoute} route={route} />
-      )}
+      <SpNav setRoute={setRoute} route={route} />
       <div className="shadowImg">
-      {display === "desktop" || display === "Htablet" ? (
-          <img alt="" alt="" src={apiBG} className="bgImg" />
-        ) : null}
+<img alt="" alt="" src={apiBG} className="bgImg" />
         <div className="Cont">
           <h1 className="spTitle">Regenerative Agriculture:</h1>
           <p className="paragraph subP">

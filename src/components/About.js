@@ -2,10 +2,12 @@ import React from "react";
 import liveBG from "../assets/bigMenu/agriBG.png";
 import { Footer } from "./Footer";
 
-export const About = ({ setRoute, route }) => {
+export const About = ({ setRoute, route, display }) => {
   return (
     <div>
-      <img alt="" src={liveBG} className="bgImg" />
+      {display === "desktop" || display === "Htablet" ? (
+        <img alt="" src={liveBG} className="bgImg" />
+      ) : null}
       <div className="tc">
         <br />
         <br />

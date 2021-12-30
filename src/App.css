@@ -337,10 +337,8 @@
 }
 
 .formsmall {
-  border-width: 0.1px;
+  padding: 5%;
   border-radius: 7px;
-  border-style: solid;
-  border-color: #00000000;
   margin: 10%;
   padding-bottom: 3em;
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #334d45),
@@ -355,8 +353,7 @@
 
 .shadowImgg {
   height: 100%;
-  background-image: linear-gradient(to bottom, #334d4596, #334d45),
-  none;;
+  background-image: linear-gradient(to bottom, #334d4596, #334d45), none;
 }
 
 .Cont {
@@ -644,14 +641,14 @@
   background-color: #699186;
   border-width: 1px;
   border-style: solid;
+  color: white;
+  border-color: #ffec82;
+  padding: 1.2% 1.7%;
+  border-radius: 5px;
   top: 50%;
   display: inline;
-  color: white;
   /* padding: 0.75em 1em; */
-  padding: 1% 1.5%;
-  border-radius: 5px;
   margin-right: 1rem;
-  border-color: #ffec82;
   -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -690,11 +687,9 @@
   background-size: cover;
 }
 
-
 .bgImgRes {
   top: 0rem;
-  position: absolute;
-  height: 100%;
+  position: fixed;
   width: 100%;
   z-index: -100;
 }
@@ -735,11 +730,58 @@
   padding: 0.5rem;
   border-radius: 5px;
   list-style-type: none;
-  background-color: #334d45;
   margin-left: -1rem;
   color: white;
+  background-color: #699186;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffec82;
 }
 
 .nrs {
   width: 100%;
+}
+
+.smallmenutab {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fff5bc;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(15, 64, 46, 0.48);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(15, 64, 46, 0.48);
+  box-shadow: 10px 10px 0px 0px rgba(15, 64, 46, 0.48);
+}
+
+#apiw {
+  background-image: url(./assets/bigMenu/apiMask.png);
+  -webkit-animation: shadow-drop-center 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  background-size: 5rem;
+}
+
+#livew {
+  background-image: url(./assets/bigMenu/liveMask.png);
+  -webkit-animation: shadow-drop-center 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  background-size: 5rem;
+}
+
+#agriw {
+  background-image: url(./assets/bigMenu/agriMask.png);
+  -webkit-animation: shadow-drop-center 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  background-size: 5rem;
+}
+
+#hydrow {
+  background-image: url(./assets/bigMenu/hydroMask.png);
+  -webkit-animation: shadow-drop-center 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  background-size: 5rem;
 }

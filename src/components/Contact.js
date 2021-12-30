@@ -5,11 +5,7 @@ import { ContactSmall } from "./ContactSmall";
 
 export const Contact = ({ setRoute, route, display }) => {
   return (
-    <div
-      className={
-        display === "phone" || display === "Vtablet" ? "bgsmall" : null
-      }
-    >
+    <div>
       {display === "desktop" || display === "Htablet" ? (
         <div>
           <img src={apiBG} className="bgImg" />

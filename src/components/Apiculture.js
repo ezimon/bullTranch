@@ -14,21 +14,9 @@ export const Apiculture = ({ setRoute, route, display }) => {
           : "special tc"
       }
     >
-      {display === "desktop" || display === "Htablet" ? (
-        <SpNav setRoute={setRoute} route={route} />
-      ) : (
-        <SpNavSmall setRoute={setRoute} route={route} />
-      )}
-      <div
-        className={
-          display === "desktop" || display === "Htablet"
-            ? "shadowImg"
-            : "shadowImgg"
-        }
-      >
-        {display === "desktop" || display === "Htablet" ? (
-          <img alt="" alt="" src={apiBG} className="bgImg" />
-        ) : null}
+      <SpNav setRoute={setRoute} route={route} />
+      <div className="shadowImg">
+        <img alt="" alt="" src={apiBG} className="bgImg" />
         <div className="Cont">
           <h1 className="spTitle ">Apiculture:</h1>
           <p className="paragraph subP">
