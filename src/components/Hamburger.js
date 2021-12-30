@@ -10,18 +10,32 @@ export const Hamburger = ({ setRoute }) => {
   const onCloseModal = () => setOpen(false);
   return (
     <div>
-      <img src={ham} className="ham pointer grow" alt="" onClick={() => setOpen(true)} />
+      <img
+        src={ham}
+        className="ham pointer grow"
+        alt=""
+        onClick={() => setOpen(true)}
+      />
       <Modal open={open} onClose={onCloseModal} center>
         <ul onClick={() => setOpen(false)}>
           <b>
-            <li className="hammenu pointer grow" onClick={() => setRoute("contact")}>
-              Contact us
+            <li
+              className="hammenu pointer grow"
+              onClick={() => setRoute("home")}
+            >
+              Home
             </li>
-            <li className="hammenu pointer grow" onClick={() => setRoute("about")}>
+            <li
+              className="hammenu pointer grow"
+              onClick={() => setRoute("about")}
+            >
               Who we are
             </li>
-            <li className="hammenu pointer grow" onClick={() => setRoute("home")}>
-              Home
+            <li
+              className="hammenu pointer grow"
+              onClick={() => setRoute("contact")}
+            >
+              Contact us
             </li>
           </b>
         </ul>

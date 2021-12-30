@@ -15,11 +15,12 @@ value="https://www.bulltranch.org/"
 export const Contact = ({ setRoute, route, display }) => {
   return (
     <div>
+      {display === "desktop" || display === "Htablet" ? (
+        <img src={apiBG} className="bgImg" />
+      ) : (
+        <img src={apiBG} className="bgImgRes" />
+      )}
       <div>
-        {display === "desktop" || display === "Htablet" ? (
-          <img src={apiBG} className="bgImg" />
-        ) : null}
-
         <div className="form">
           <h1 className="conTitle tc">Contact form</h1>
           <form
