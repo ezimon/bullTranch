@@ -67,7 +67,6 @@ export const Contact = ({ setRoute, route, display }) => {
           <ContactSmall />
         </div>
       )}
-
       <Footer className="absolute" setRoute={setRoute} route={route} />
     </div>
   );
