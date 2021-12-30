@@ -26,7 +26,7 @@ function App() {
       ? setDisplay("Vtablet")
       : ratio < 1.17
       ? setDisplay("phone")
-      : setDisplay("desktop");
+      : setDisplay("phone");
   }, [ratio]);
 
   const [route, setRoute] = useState("home");
@@ -86,6 +86,7 @@ function App() {
     <div className="App">
       <div className="black"></div>
       <Header setRoute={setRoute} display={display} />
+      <p style={{ float: "right", padding: "1rem" }}>display: {display}</p>
       {component}
       {/* <Footer setRoute={setRoute} route={route} /> */}
     </div>

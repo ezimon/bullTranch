@@ -15,7 +15,7 @@ export const BigMenu2 = ({ setRoute, display }) => {
 
   const ps = [
     "We focus on pasture-based, encouraging biodiversity, healthy soil, and humane treatment of animals. Our priorities are pasture and restrictions on the use of antibiotics and hormones.",
-    "This is an approach we have incorporated into our ranch management plan. The key to regenerative agriculture is that it not only “does no harm” to the land but actually improves it, using technologies that regenerate and revitalize the soil and the environment. ",
+    "The key to regenerative agriculture is that it not only “does no harm” to the land but actually improves it, using technologies that regenerate and revitalize the soil and the environment. ",
     "We promote honey bee health and sustainability. Continuously improve beekeeping tools, techniques, and practices. And always produce the highest quality, pure honey and beeswax.",
     "We use this unique method of farming that eliminates the use of soil entirely as a growing environment. Instead of the use of soil, hydroponics relies on supplying nutrition directly to the plants by using nutrient-rich water.",
   ];
@@ -61,16 +61,7 @@ export const BigMenu2 = ({ setRoute, display }) => {
 
   return (
     <div>
-      {/* <div className={bgAnim ? (className = "flash") : (className = "")}></div> */}
-
-      {display === 'desktop' ? (
-        bgAnim ? null : (
-          <img src={bgImg} className="bgImg" />
-        )
-      ) : (
-        <img src={liveBG} className="bgImgRes" />
-      )}
-
+      {bgAnim ? null : <img src={bgImg} className="bgImg" />}
       <div className="menuCont tc">
         {bgAnim ? null : (
           <div className="textCarouselCont tc">
