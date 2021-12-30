@@ -6,12 +6,13 @@ export const ContactSmall = () => {
       <br />
       <br />
       <br />
+      <br />
       <form
         action="https://formsubmit.co/bulltranch@whyw8t.com"
         method="POST"
         className=" formsmall"
       >
-        <h1 className="">Contact form:</h1>
+        <h1 className="conTitle">Contact form:</h1>
         <input type="hidden" name="_next" value="https://www.bulltranch.org/" />
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_template" value="table" />
