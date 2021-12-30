@@ -4,21 +4,44 @@ import mainlogo from "../assets/logo.png";
 export const Header = ({ setRoute, display }) => {
   return (
     <div className="header">
+      {display === "desktop" || display === "Htablet" ? (
         <img
           src={mainlogo}
           onClick={() => setRoute("home")}
           alt="Bull T Ranch"
           className="headerLogo grow"
         />
-      <ul className="tabs">
+      ) : null}
+      <ul>
         <b>
-          <li className="tab grow" onClick={() => setRoute("contact")}>
+          <li
+            className={
+              display === "desktop" || display === "Htablet"
+                ? "tab grow"
+                : "tabsmall"
+            }
+            onClick={() => setRoute("contact")}
+          >
             Contact us
           </li>
-          <li className="tab grow" onClick={() => setRoute("about")}>
+          <li
+            className={
+              display === "desktop" || display === "Htablet"
+                ? "tab grow"
+                : "tabsmall"
+            }
+            onClick={() => setRoute("about")}
+          >
             Who we are
           </li>
-          <li className="tab grow" onClick={() => setRoute("home")}>
+          <li
+            className={
+              display === "desktop" || display === "Htablet"
+                ? "tab grow"
+                : "tabsmall"
+            }
+            onClick={() => setRoute("home")}
+          >
             Home
           </li>
         </b>

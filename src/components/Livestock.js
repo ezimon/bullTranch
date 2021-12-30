@@ -3,11 +3,16 @@ import apiBG from "../assets/bigMenu/liveBG.jpg";
 import scroll from "../assets/mouse.png";
 import { Footer } from "./Footer";
 import { SpNav } from "./SpNav";
+import { SpNavSmall } from "./SpNavSmall";
 
-export const Livestock = ({ setRoute, route }) => {
+export const Livestock = ({ setRoute, route, display }) => {
   return (
     <div className="special">
-      <SpNav setRoute={setRoute} route={route} />
+      {display === "desktop" || display === "Htablet" ? (
+        <SpNav setRoute={setRoute} route={route} />
+      ) : (
+        <SpNavSmall setRoute={setRoute} route={route} />
+      )}
       <div className="shadowImg">
         <img src={apiBG} className="bgImg" />
         <div className="Cont">
@@ -21,7 +26,6 @@ export const Livestock = ({ setRoute, route }) => {
           <img src={scroll} alt="" className="mouse" />
         </div>
       </div>
-
       <div className="spBody">
         <div className="width-70">
           <h1 className="subtitle">What is Organic Livestock</h1>

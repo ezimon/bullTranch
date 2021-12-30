@@ -3,11 +3,16 @@ import apiBG from "../assets/bigMenu/hydroBG.webp";
 import scroll from "../assets/mouse.png";
 import { Footer } from "./Footer";
 import { SpNav } from "./SpNav";
+import { SpNavSmall } from "./SpNavSmall";
 
-export const Hydroponic = ({ setRoute, route }) => {
+export const Hydroponic = ({ setRoute, route, display }) => {
   return (
     <div className="special">
-      <SpNav setRoute={setRoute} route={route} />
+      {display === "desktop" || display === "Htablet" ? (
+        <SpNav setRoute={setRoute} route={route} />
+      ) : (
+        <SpNavSmall setRoute={setRoute} route={route} />
+      )}
       <div className="shadowImg">
         <img src={apiBG} className="bgImg" />
         <div className="Cont">
@@ -22,14 +27,13 @@ export const Hydroponic = ({ setRoute, route }) => {
           <img src={scroll} alt="Scroll down" className="mouse" />
         </div>
       </div>
-
       <div className="spBody">
         <div className="width-70">
           <h1 className="subtitle">What is Hydroponics?</h1>
           <p className="paragraph">
-            Hydroponics is simply the growing of plants without soil. <b>Plants
-            don’t need soil</b>, but they do need the vitamins and minerals that
-            soil can provide for them.
+            Hydroponics is simply the growing of plants without soil.{" "}
+            <b>Plants don’t need soil</b>, but they do need the vitamins and
+            minerals that soil can provide for them.
             <br />
             Plants also need light, water, carbon dioxide and oxygen at the root
             zone. In hydroponics, plants are grown in an inert medium such as
@@ -37,16 +41,16 @@ export const Hydroponic = ({ setRoute, route }) => {
             perfected mix of primary, secondary and micro-nutrients.
             <br />
             <br />
-            Almost <b>any kind of plant can be grown hydroponically</b>, including
-            veggies, herbs, fruits and flowers. Hydroponics is widely used by
-            farmers and growers throughout California. You might have noticed
-            hydroponic tomatoes or ‘living’ lettuce in the refrigerated section
-            at your grocery store. You might also have seen hydroponic roses and
-            other cut flowers at the florist.
+            Almost <b>any kind of plant can be grown hydroponically</b>,
+            including veggies, herbs, fruits and flowers. Hydroponics is widely
+            used by farmers and growers throughout California. You might have
+            noticed hydroponic tomatoes or ‘living’ lettuce in the refrigerated
+            section at your grocery store. You might also have seen hydroponic
+            roses and other cut flowers at the florist.
             <br />
             <br />
-            <b>Hydroponics provides an advantage over soil</b> growing for several
-            reasons.
+            <b>Hydroponics provides an advantage over soil</b> growing for
+            several reasons.
             <br />
             Plants can be grown year-round since climate conditions can be
             controlled in a greenhouse. Because their roots do not need to reach
@@ -62,8 +66,8 @@ export const Hydroponic = ({ setRoute, route }) => {
             productive than soil growing. Many farmers in California are
             beginning to switch over to hydroponics for all of these reasons.
             The concern about water use is also a BIG reason hydroponics is
-            becoming more popular - it significantly <b>conserves water over the
-            usual growing methods</b>.
+            becoming more popular - it significantly{" "}
+            <b>conserves water over the usual growing methods</b>.
           </p>
         </div>
         <br />

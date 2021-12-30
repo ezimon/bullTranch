@@ -106,23 +106,6 @@
   }
 }
 
-.header {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  position: sticky;
-  width: 100%;
-  left: 0%;
-  right: 0%;
-  top: 0px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  z-index: 100;
-  margin: 0;
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), #1c5040c7),
-    none;
-  -webkit-animation: slide-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
 .App {
   font-family: "Poppins";
 }
@@ -143,6 +126,36 @@
 
 .headerLogo:hover {
   cursor: pointer;
+}
+
+.header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: sticky;
+  width: 100%;
+  left: 0%;
+  right: 0%;
+  top: 0px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: 100;
+  margin: 0;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), #1c5040c7),
+    none;
+  -webkit-animation: slide-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  display: inline;
+}
+
+.tabsmall {
+  background-color: #699186;
+  border-width: 1px;
+  border-style: solid;
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff5bc;
+  padding: 0.75em 1em;
+  border-radius: 5px;
+  width: 15%;
 }
 
 .tabs {
@@ -309,11 +322,11 @@
   z-index: -100;
   min-height: 940px;
   width: auto;
-  animation: fadeIn .5s linear;
-  -webkit-animation: fadeIn .5s linear;
-  -moz-animation: fadeIn .5s linear;
-  -o-animation: fadeIn .5s linear;
-  -ms-animation: fadeIn .5s linear;
+  animation: fadeIn 0.5s linear;
+  -webkit-animation: fadeIn 0.5s linear;
+  -moz-animation: fadeIn 0.5s linear;
+  -o-animation: fadeIn 0.5s linear;
+  -ms-animation: fadeIn 0.5s linear;
 }
 
 .homeBG {
@@ -508,7 +521,7 @@
   position: fixed;
   right: 0;
   width: 7em;
-  padding-right: .3rem;
+  padding-right: 0.3rem;
   background: rgb(0, 36, 10);
   background: linear-gradient(
     90deg,
@@ -542,11 +555,11 @@
   display: table-cell;
   vertical-align: middle;
   padding: 13% 0 20% 0;
-  animation: fadeIn .5s linear;
-  -webkit-animation: fadeIn .5s linear;
-  -moz-animation: fadeIn .5s linear;
-  -o-animation: fadeIn .5s linear;
-  -ms-animation: fadeIn .5s linear;
+  animation: fadeIn 0.5s linear;
+  -webkit-animation: fadeIn 0.5s linear;
+  -moz-animation: fadeIn 0.5s linear;
+  -o-animation: fadeIn 0.5s linear;
+  -ms-animation: fadeIn 0.5s linear;
 }
 
 .textCarouselBG {

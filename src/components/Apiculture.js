@@ -3,11 +3,16 @@ import apiBG from "../assets/bigMenu/apiBG.png";
 import scroll from "../assets/mouse.png";
 import { Footer } from "./Footer";
 import { SpNav } from "./SpNav";
+import { SpNavSmall } from "./SpNavSmall";
 
-export const Apiculture = ({ setRoute, route }) => {
+export const Apiculture = ({ setRoute, route, display }) => {
   return (
     <div className="special">
-      <SpNav setRoute={setRoute} route={route} />
+      {display === "desktop" || display === "Htablet" ? (
+        <SpNav setRoute={setRoute} route={route} />
+      ) : (
+        <SpNavSmall setRoute={setRoute} route={route} />
+      )}
       <div className="shadowImg">
         <img alt="" alt="" src={apiBG} className="bgImg" />
         <div className="Cont">
@@ -45,12 +50,13 @@ export const Apiculture = ({ setRoute, route }) => {
             another. This fertilizes plants so that they can grow and reproduce.
             Not only are bees <b>critical to agriculture and growing food</b>,
             accounting for as much as 30% of the world's food production,
-            they're necessary for <b>wild plants as well</b>. It's estimated that as
-            many as 90% of wild plants rely on pollinators like bees to survive
-            and thrive. Without bees, many of these plants would just die off.
-            Bees don't only help the immediate area where they're kept. They can
-            gather nectar and pollen from miles around, spreading diversity and
-            sustainability throughout the ecosystem that they're a part of.
+            they're necessary for <b>wild plants as well</b>. It's estimated
+            that as many as 90% of wild plants rely on pollinators like bees to
+            survive and thrive. Without bees, many of these plants would just
+            die off. Bees don't only help the immediate area where they're kept.
+            They can gather nectar and pollen from miles around, spreading
+            diversity and sustainability throughout the ecosystem that they're a
+            part of.
             <br />
             <br />
             <br />
