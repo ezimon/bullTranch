@@ -19,17 +19,18 @@ export const Apiculture = ({ setRoute, route, display }) => {
       ) : (
         <SpNavSmall setRoute={setRoute} route={route} />
       )}
-      <div 
-            className={
-              display === "desktop" || display === "Htablet"
-                ? "shadowImg"
-                : "shadowImg bgsmall"
-            }>
+      <div
+        className={
+          display === "desktop" || display === "Htablet"
+            ? "shadowImg"
+            : "shadowImgg"
+        }
+      >
         {display === "desktop" || display === "Htablet" ? (
           <img alt="" alt="" src={apiBG} className="bgImg" />
         ) : null}
         <div className="Cont">
-          <h1 className="spTitle tl">Apiculture:</h1>
+          <h1 className="spTitle ">Apiculture:</h1>
           <p className="paragraph subP">
             We promote honey bee health and sustainability. Continuously improve
             beekeeping tools, techniques, and practices. And always produce the

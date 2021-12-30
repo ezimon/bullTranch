@@ -7,16 +7,24 @@ import { SpNavSmall } from "./SpNavSmall";
 
 export const Agriculture = ({ setRoute, route, display }) => {
   return (
-    <div className="special">
+    <div
+      className={
+        display === "desktop" || display === "Htablet"
+          ? "special"
+          : "special tc"
+      }
+    >
       {display === "desktop" || display === "Htablet" ? (
         <SpNav setRoute={setRoute} route={route} />
       ) : (
         <SpNavSmall setRoute={setRoute} route={route} />
       )}
       <div className="shadowImg">
-        <img alt="" src={apiBG} className="bgImg" />
+      {display === "desktop" || display === "Htablet" ? (
+          <img alt="" alt="" src={apiBG} className="bgImg" />
+        ) : null}
         <div className="Cont">
-          <h1 className="spTitle tl">Regenerative Agriculture:</h1>
+          <h1 className="spTitle">Regenerative Agriculture:</h1>
           <p className="paragraph subP">
             This is an approach we have incorporated into our ranch management
             plan. The key to regenerative agriculture is that it not only “does

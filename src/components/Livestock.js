@@ -7,16 +7,24 @@ import { SpNavSmall } from "./SpNavSmall";
 
 export const Livestock = ({ setRoute, route, display }) => {
   return (
-    <div className="special">
+    <div
+      className={
+        display === "desktop" || display === "Htablet"
+          ? "special"
+          : "special tc"
+      }
+    >
       {display === "desktop" || display === "Htablet" ? (
         <SpNav setRoute={setRoute} route={route} />
       ) : (
         <SpNavSmall setRoute={setRoute} route={route} />
       )}
       <div className="shadowImg">
-        <img src={apiBG} className="bgImg" />
+      {display === "desktop" || display === "Htablet" ? (
+          <img alt="" alt="" src={apiBG} className="bgImg" />
+        ) : null}
         <div className="Cont">
-          <h1 className="spTitle tl">Organic Livestock:</h1>
+          <h1 className="spTitle ">Organic Livestock:</h1>
           <p className="paragraph subP">
             We focus on pasture-based, encouraging biodiversity, healthy soil,
             and humane treatment of animals. Our priorities are pasture and

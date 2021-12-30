@@ -353,6 +353,12 @@
     none;
 }
 
+.shadowImgg {
+  height: 100%;
+  background-image: linear-gradient(to bottom, #334d4596, #334d45),
+  none;;
+}
+
 .Cont {
   width: 50%;
   right: 50%;
@@ -684,10 +690,6 @@
   background-size: cover;
 }
 
-.bgsmall {
-  background-image: linear-gradient(to top, rgba(245, 246, 252, 0), rgb(255, 255, 255)),
-  url(./assets/bigMenu/liveBG.jpg);
-}
 
 .bgImgRes {
   top: 0rem;

@@ -7,16 +7,24 @@ import { SpNavSmall } from "./SpNavSmall";
 
 export const Hydroponic = ({ setRoute, route, display }) => {
   return (
-    <div className="special">
+    <div
+      className={
+        display === "desktop" || display === "Htablet"
+          ? "special"
+          : "special tc"
+      }
+    >
       {display === "desktop" || display === "Htablet" ? (
         <SpNav setRoute={setRoute} route={route} />
       ) : (
         <SpNavSmall setRoute={setRoute} route={route} />
       )}
       <div className="shadowImg">
-        <img src={apiBG} className="bgImg" />
+      {display === "desktop" || display === "Htablet" ? (
+          <img alt="" alt="" src={apiBG} className="bgImg" />
+        ) : null}
         <div className="Cont">
-          <h1 className="spTitle tl">Hydroponic System:</h1>
+          <h1 className="spTitle ">Hydroponic System:</h1>
           <p className="paragraph subP">
             We use this unique method of farming that eliminates the use of soil
             entirely as a growing environment. Instead of the use of soil,

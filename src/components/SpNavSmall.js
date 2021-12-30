@@ -12,7 +12,7 @@ export const SpNavSmall = ({ setRoute, route }) => {
       </p>
       <p
         className="grow spTabsmall spTab"
-        onClick={() => setRoute("apiculture")}
+        onClick={() => setRoute("agriculture")}
       >
         Regenerative Agriculture
       </p>
