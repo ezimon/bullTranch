@@ -6,7 +6,9 @@ export const SpNavSmall = ({ setRoute, route }) => {
       <p className="paragraphh ">Menu:</p>
       <p
         className={
-          route === "livestock" ? "grow spTabsmall selctd" : "grow spTabsmall"
+          route === "livestock"
+            ? "grow spTabsmall spTab selctd"
+            : "grow spTabsmall spTab"
         }
         onClick={() => setRoute("livestock")}
       >
@@ -14,7 +16,9 @@ export const SpNavSmall = ({ setRoute, route }) => {
       </p>
       <p
         className={
-          route === "agriculture" ? "grow spTabsmall selctd" : "grow spTabsmall"
+          route === "agriculture"
+            ? "grow spTabsmall spTab selctd"
+            : "grow spTabsmall spTab"
         }
         onClick={() => setRoute("apiculture")}
       >
@@ -22,7 +26,9 @@ export const SpNavSmall = ({ setRoute, route }) => {
       </p>
       <p
         className={
-          route === "apiculture" ? "grow spTabsmall selctd" : "grow spTabsmall"
+          route === "apiculture"
+            ? "grow spTabsmall spTab selctd"
+            : "grow spTabsmall spTab"
         }
         onClick={() => setRoute("apiculture")}
       >
@@ -30,7 +36,9 @@ export const SpNavSmall = ({ setRoute, route }) => {
       </p>
       <p
         className={
-          route === "hydroponic" ? "grow spTabsmall selctd" : "grow spTabsmall"
+          route === "hydroponic"
+            ? "grow spTabsmall spTab selctd"
+            : "grow spTabsmall spTab"
         }
         onClick={() => setRoute("hydroponic")}
       >
