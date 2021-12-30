@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const LivestockSmal = () => {
+export const LivestockSmall = () => {
     return (
         <div>
             LivestockSmal

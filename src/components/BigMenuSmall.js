@@ -9,7 +9,7 @@ export const BigMenuSmall = ({ setRoute }) => {
       <br />
       <br />
       <h1 className="conTitle bigger">
-        <b>Our services:</b>
+        <b>What we do:</b>
       </h1>
       <div className="width-70">
         <div onClick={() => setRoute("hydroponic")} className="smallmenutab grow pointer" id="hydrow">

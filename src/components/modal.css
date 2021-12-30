@@ -45,19 +45,23 @@
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25);
   margin: 1.2rem;
   padding: 1.2rem;
+  padding-top: 3rem;
   position: relative;
   overflow-y: auto;
   border-radius: 5px;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: -2.5rem;
+  left: -2rem;
+  right: 10%;
+  bottom: -2rem;
   position: absolute;
+  -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .react-responsive-modal-closeButton {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 40px;
+  right: 20px;
   border: none;
   padding: 0;
   cursor: pointer;
@@ -85,22 +89,22 @@
 
 @keyframes react-responsive-modal-modal-in {
   0% {
-    transform: scale(0.96);
-    opacity: 0;
+    -webkit-transform: translateX(-420px);
+    transform: translateX(-420px);
   }
   100% {
-    transform: scale(100%);
-    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 @keyframes react-responsive-modal-modal-out {
   0% {
-    transform: scale(100%);
-    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
-    transform: scale(0.96);
-    opacity: 0;
+    -webkit-transform: translateX(-420px);
+    transform: translateX(-420px);
   }
 }
