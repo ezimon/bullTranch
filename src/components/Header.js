@@ -12,7 +12,7 @@ export const Header = ({ setRoute, display }) => {
         className={
           display === "desktop" || display === "Htablet"
             ? "headerLogo grow"
-            : "headerLogosmall"
+            : "headerLogosmall pointer grow"
         }
       />
 

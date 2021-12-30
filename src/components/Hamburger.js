@@ -10,7 +10,7 @@ export const Hamburger = ({ setRoute }) => {
   const onCloseModal = () => setOpen(false);
   return (
     <div>
-      <img src={ham} className="ham" alt="" onClick={() => setOpen(true)} />
+      <img src={ham} className="ham pointer grow" alt="" onClick={() => setOpen(true)} />
       <Modal open={open} onClose={onCloseModal} center>
         <ul onClick={() => setOpen(false)}>
           <b>
