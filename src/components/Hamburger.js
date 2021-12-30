@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Modal } from "react-responsive-modal";
 import ham from "../assets/icons/ham.png";
+import "react-responsive-modal/styles.css";
 
 export const Hamburger = ({ setRoute }) => {
   const [open, setOpen] = useState(false);
