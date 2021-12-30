@@ -2,20 +2,30 @@ import React, { useRef } from "react";
 import { Footer } from "./Footer";
 import apiBG from "../assets/bigMenu/liveBG.jpg";
 
-export const Contact = ({ setRoute, route }) => {
+{
+  /* <input
+type="hidden"
+name="_next"
+value="https://www.bulltranch.org/"
+/>
+<input type="hidden" name="_captcha" value="false" />
+<input type="hidden" name="_template" value="table" /> */
+}
+
+export const Contact = ({ setRoute, route, display }) => {
   return (
     <div>
       <div>
-        <img src={apiBG} className="bgImg" />
+        {display === "desktop" || display === "Htablet" ? (
+          <img src={apiBG} className="bgImg" />
+        ) : null}
+
         <div className="form">
           <h1 className="conTitle tc">Contact form</h1>
           <form
             action="https://formsubmit.co/bulltranch@whyw8t.com"
             method="POST"
           >
-          <input type="hidden" name="_next" value="https://www.bulltranch.org/" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
             <br />
             <div className="flex-container">
               <div>
@@ -25,7 +35,7 @@ export const Contact = ({ setRoute, route }) => {
                   type="text"
                   name="user_name"
                   placeholder="Name"
-                  className="box"
+                  className="box nrs"
                 />
                 <br />
                 <br />
@@ -35,7 +45,7 @@ export const Contact = ({ setRoute, route }) => {
                   type="email"
                   name="email"
                   placeholder="Email address"
-                  className="box"
+                  className="box nrs"
                 />
                 <br />
                 <br />
@@ -61,8 +71,8 @@ export const Contact = ({ setRoute, route }) => {
             </div>
           </form>
         </div>
-        <Footer className="absolute" setRoute={setRoute} route={route} />
       </div>
+      <Footer className="absolute" setRoute={setRoute} route={route} />
     </div>
   );
 };
