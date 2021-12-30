@@ -14,13 +14,13 @@ export const Hamburger = ({ setRoute }) => {
       <Modal open={open} onClose={onCloseModal} center>
         <ul onClick={() => setOpen(false)}>
           <b>
-            <li className="hammenu" onClick={() => setRoute("contact")}>
+            <li className="hammenu pointer grow" onClick={() => setRoute("contact")}>
               Contact us
             </li>
-            <li className="hammenu" onClick={() => setRoute("about")}>
+            <li className="hammenu pointer grow" onClick={() => setRoute("about")}>
               Who we are
             </li>
-            <li className="hammenu" onClick={() => setRoute("home")}>
+            <li className="hammenu pointer grow" onClick={() => setRoute("home")}>
               Home
             </li>
           </b>

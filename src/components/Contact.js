@@ -13,7 +13,7 @@ export const Contact = ({ setRoute, route }) => {
             action="https://formsubmit.co/bulltranch@whyw8t.com"
             method="POST"
           >
-            <input type="hidden" name="_next" value="null" />
+          <input type="hidden" name="_next" value="https://www.bulltranch.org/" />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
             <br />
@@ -52,13 +52,11 @@ export const Contact = ({ setRoute, route }) => {
                 <textarea name="message" className="box mailText" />
                 <br />
                 <br />
-                {/* <div onClick={() => notiify()}> */}
                 <input
                   type="submit"
                   value="Send mail"
                   className="submitBtn grow"
                 />
-                {/* </div> */}
               </div>
             </div>
           </form>
