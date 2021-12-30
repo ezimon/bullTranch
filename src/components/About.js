@@ -6,8 +6,10 @@ export const About = ({ setRoute, route }) => {
   return (
     <div>
       <img alt="" src={liveBG} className="bgImg" />
-      <div className="shadowImg tc">
-        <h1 className="subtitle">About us:</h1>
+      <div className="tc">
+        <br />
+        <br />
+        <h1 className="conTitle bigger">About us:</h1>
         <div className="width-70">
           <p className="paragraph subP subPP">
             Nestled in the Black Hills of Wyoming with more than 250 acres of
@@ -25,8 +27,6 @@ export const About = ({ setRoute, route }) => {
             strong rural community, and a profit margin that will provide the
             incentive for people like us to spend every waking moment producing
             food and fiber for the rest.
-            <br />
-            <br />
             <br />
             <br />
             <br />

@@ -8,11 +8,11 @@ export const ContactSmall = () => {
       <br />
       <br />
       <form
-        action="https://formsubmit.co/bulltranch@whyw8t.com"
+        action="https://formsubmit.co/a7deb2d964cab03046b716887d0905bd"
         method="POST"
-        className=" formsmall"
+        className="formsmall conTitle"
       >
-        <h1 className="conTitle">Contact form:</h1>
+        <h1>Contact form:</h1>
         <input type="hidden" name="_next" value="https://www.bulltranch.org/" />
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_template" value="table" />
@@ -20,7 +20,12 @@ export const ContactSmall = () => {
         <div>
           <label className="">Name</label>
           <br />
-          <input type="text" name="user_name" placeholder="Name" className="" />
+          <input
+            type="text"
+            name="Name"
+            placeholder="Name"
+            className="smallinput"
+          />
           <br />
           <br />
           <label className="">Email</label>
@@ -29,7 +34,7 @@ export const ContactSmall = () => {
             type="email"
             name="email"
             placeholder="Email address"
-            className="middle"
+            className="smallinput"
           />
           <br />
           <br />
@@ -37,10 +42,10 @@ export const ContactSmall = () => {
         <div>
           <label className="">Message</label>
           <br />
-          <textarea name="message" className="" rows={7} />
+          <textarea name="Content" className="" rows={7} />
           <br />
           <br />
-          <input type="submit" value="Send mail" className="" />
+          <input type="submit" value="Send mail" className="btnLearn pointer grow" />
         </div>
       </form>
     </div>

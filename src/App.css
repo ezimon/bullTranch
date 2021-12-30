@@ -330,6 +330,11 @@
   width: 100%;
 }
 
+.smallinput {
+margin: 0 15% 0 15%;
+width: 70%;
+}
+
 .formsmall {
   border-width: 0.1px;
   border-radius: 7px;
@@ -415,6 +420,10 @@
   font-weight: 600;
   color: #fff1a1;
   font-size: 2.75em;
+}
+
+.bigger {
+  font-size: 2.5rem;
 }
 
 .conTitle {

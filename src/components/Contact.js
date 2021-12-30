@@ -16,7 +16,7 @@ export const Contact = ({ setRoute, route, display }) => {
           <div className="form">
             <h1 className="conTitle tc">Contact form</h1>
             <form
-              action="https://formsubmit.co/bulltranch@whyw8t.com"
+              action="https://formsubmit.co/a7deb2d964cab03046b716887d0905bd"
               method="POST"
             >
               <input
@@ -33,7 +33,7 @@ export const Contact = ({ setRoute, route, display }) => {
                   <br />
                   <input
                     type="text"
-                    name="user_name"
+                    name="Name"
                     placeholder="Name"
                     className="box nrs"
                   />
@@ -53,7 +53,7 @@ export const Contact = ({ setRoute, route, display }) => {
                 <div style={{ marginLeft: "1em", width: "100%" }}>
                   <label className="topTag">Message</label>
                   <br />
-                  <textarea name="message" className="box mailText" />
+                  <textarea name="Content" className="box mailText" />
                   <br />
                   <br />
                   <input
