@@ -24,7 +24,7 @@ export const ContactSmall = () => {
             type="text"
             name="Name"
             placeholder="Name"
-            className="smallinput"
+            className="smallinput box1"
           />
           <br />
           <br />
@@ -34,7 +34,7 @@ export const ContactSmall = () => {
             type="email"
             name="email"
             placeholder="Email address"
-            className="smallinput"
+            className="smallinput box1"
           />
           <br />
           <br />
@@ -42,7 +42,7 @@ export const ContactSmall = () => {
         <div>
           <label className="">Message</label>
           <br />
-          <textarea name="Content" className="" rows={7} />
+          <textarea name="Content" className="box1" rows={7} />
           <br />
           <br />
           <input type="submit" value="Send mail" className="btnLearn pointer grow" />

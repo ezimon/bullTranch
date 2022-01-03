@@ -9,7 +9,7 @@ export const Agriculture = ({ setRoute, route, display }) => {
   return (
     <div>
       {display === "phone" || display === "Vtablet" ? (
-        <AgricultureSmall setRoute={setRoute} route={route} />
+        <AgricultureSmall setRoute={setRoute} route={route} display={display}/>
       ) : (
         <div className="special">
           <SpNav setRoute={setRoute} route={route} />
@@ -81,7 +81,7 @@ export const Agriculture = ({ setRoute, route, display }) => {
               <br />
               <hr />
             </div>
-            <Footer setRoute={setRoute} route={route} />
+            <Footer display={display} setRoute={setRoute} route={route} />
           </div>
         </div>
       )}

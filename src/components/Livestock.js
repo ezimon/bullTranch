@@ -10,7 +10,7 @@ export const Livestock = ({ setRoute, route, display }) => {
   return (
     <div>
       {display === "phone" || display === "Vtablet" ? (
-        <LivestockSmall setRoute={setRoute} route={route} />
+        <LivestockSmall setRoute={setRoute} route={route} display={display} />
       ) : (
         <div className="special">
           <SpNav setRoute={setRoute} route={route} />

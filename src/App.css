@@ -126,7 +126,7 @@
   padding-top: 2%;
   margin-left: -0.5rem;
   float: left;
-  filter: drop-shadow(15px 15px 10px rgba(101, 119, 85, 0.863));
+  filter: drop-shadow(0 0 20px rgba(101, 119, 85, 0.726));
 }
 
 .menuLogo {
@@ -219,10 +219,6 @@
   align-items: stretch;
 }
 
-/* .menu:hover {
-  cursor: pointer;
-} */
-
 #Mapi:hover {
   background-image: url(./assets/bigMenu/apiMask.png);
   -webkit-animation: shadow-drop-center 0.4s
@@ -252,9 +248,6 @@
 }
 
 #hoverId:hover {
-  /* -webkit-box-shadow: 0px 0px 34px 10px rgba(255, 255, 255, 0.69);
-  box-shadow: 0px 0px 34px 10px rgba(255, 255, 255, 0.69); */
-  /* background-color: #53796f8f; */
   -webkit-animation: shadow-drop-center 0.4s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -262,6 +255,55 @@
 
 .menuItem:hover {
   color: black;
+}
+
+.pddnTop {
+  position: relative;
+  margin: auto 5% 0 5%;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.fadeBG {
+  text-shadow: 0px 0px 20px #474747;
+}
+
+#backgroundSmall {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: -100;
+}
+
+.spBodyTxt {
+  color: white;
+}
+
+.hoMenuSmall {
+  background-image: linear-gradient(to bottom, #ffffff00, #000000bf), none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  /* border-top: solid lavender 1.5px; */
+}
+
+.navbarCont {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.7rem 0.5rem 0.7rem 0.5rem;
+}
+
+.navbarIcon {
+  height: 3.5rem;
+}
+
+.bgImgHome {
+  width: 100%;
+  height: 100%;
 }
 
 .special {
@@ -358,6 +400,10 @@ iframe {
 .shadowImgg {
   height: 100%;
   background-image: linear-gradient(to bottom, #334d4596, #334d45), none;
+}
+
+.aboutWidth {
+  margin: 0 10% 0 10%;
 }
 
 .Cont {
@@ -468,12 +514,18 @@ iframe {
   height: 1.25%;
   width: 100%;
   vertical-align: bottom;
-  /* background-color: #53796f; */
-  z-index: 1000;
+  z-index: 999;
+}
+
+.progContsmall {
+  height: .2rem;
+  width: 100%;
+  vertical-align: bottom;
+  z-index: 999;
 }
 
 .progBar {
-  z-index: 1000;
+  z-index: 999;
   height: 100%;
   background-color: #ffffff;
 }
@@ -484,7 +536,6 @@ iframe {
   border-style: solid;
   border-width: 0 0.3px 0 0;
   border-color: rgba(191, 191, 191, 0.863);
-  background-image: url(./assets/bigMenu/transparent.png);
   transition: background-image 0.7s;
 }
 
@@ -566,7 +617,13 @@ iframe {
   border-radius: 3.5px;
   border: none;
   margin-top: 0.5rem;
-  /* background-color: rgba(39, 65, 73, 0.946); */
+}
+
+.box1 {
+  border-radius: 2.5px;
+  border: none;
+  margin-top: 0.3rem;
+
 }
 
 .textCarouselCont {
@@ -595,11 +652,21 @@ iframe {
   padding: 0.001rem 0 0.001rem 0;
 }
 
+.carouselTitlesmall {
+  font-size: 1.85rem;
+}
+
 .carouselP {
   padding: 0 20% 0 20%;
   font-size: 1.4vw;
   letter-spacing: 0.11rem;
   line-height: 21px;
+}
+
+.carouselPsmall {
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  line-height: 22px;
 }
 
 .spTabImg {
@@ -651,7 +718,6 @@ iframe {
   border-radius: 5px;
   top: 50%;
   display: inline;
-  /* padding: 0.75em 1em; */
   margin-right: 1rem;
   -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;

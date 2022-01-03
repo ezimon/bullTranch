@@ -84,7 +84,7 @@ function App() {
 
   return (
     <div className="App">
-      {(route === "home" || route === "contact" || route === "about") ===
+      {(route === "contact" || route === "about") ===
       (display === "phone" || display === "Vtablet" ? true : false) ? (
         <div className="shadowImg">
           <img src={apiBG} alt="" className="bgImgRes" />

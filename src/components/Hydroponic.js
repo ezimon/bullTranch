@@ -10,7 +10,7 @@ export const Hydroponic = ({ setRoute, route, display }) => {
   return (
     <div>
       {display === "phone" || display === "Vtablet" ? (
-        <HydroponicSmall setRoute={setRoute} route={route} />
+        <HydroponicSmall setRoute={setRoute} route={route} display={display} />
       ) : (
         <div className="special">
           <SpNav setRoute={setRoute} route={route} />

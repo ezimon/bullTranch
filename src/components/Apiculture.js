@@ -10,7 +10,7 @@ export const Apiculture = ({ setRoute, route, display }) => {
   return (
     <div>
       {display === "phone" || display === "Vtablet" ? (
-        <ApicultureSmall setRoute={setRoute} route={route} />
+        <ApicultureSmall setRoute={setRoute} route={route} display={display} />
       ) : (
         <div className="special">
           <SpNav setRoute={setRoute} route={route} />
@@ -65,7 +65,7 @@ export const Apiculture = ({ setRoute, route, display }) => {
               </p>
               <hr />
             </div>
-            <Footer setRoute={setRoute} route={route} />
+            <Footer display={display} setRoute={setRoute} route={route} />
           </div>
         </div>
       )}

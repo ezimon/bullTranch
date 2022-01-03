@@ -12,8 +12,20 @@ export const About = ({ setRoute, route, display }) => {
         <br />
         <br />
         <h1 className="conTitle bigger">About us:</h1>
-        <div className="width-70">
-          <p className="paragraph subP subPP">
+        <div
+          className={
+            display === "desktop" || display === "Htablet"
+              ? "width-70"
+              : "aboutWidth"
+          }
+        >
+          <p
+            className={
+              display === "desktop" || display === "Htablet"
+                ? "paragraph subP"
+                : "paragraph"
+            }
+          >
             Nestled in the Black Hills of Wyoming with more than 250 acres of
             land; Bull T Ranch is a hybrid and new business model that is
             focused on our commitment to sustainable agriculture in the
@@ -34,7 +46,7 @@ export const About = ({ setRoute, route, display }) => {
             <br />
           </p>
         </div>
-        <Footer setRoute={setRoute} route={route} />
+        <Footer display={display} display={display} setRoute={setRoute} route={route} />
       </div>
     </div>
   );

@@ -2,10 +2,12 @@ import React from "react";
 import tel from "../assets/icons/tel.png";
 import mail from "../assets/icons/mail.png";
 import map from "../assets/icons/map.png";
+import { FooterSmall } from "./FooterSmall";
 
-export const Footer = ({ setRoute, route }) => {
+export const Footer = ({ setRoute, route, display }) => {
+  console.log(display);
   return (
-    <div className='footer'>
+    <div className="footer">
       <div className="iCont tc">
         <img alt="" src={tel} alt="" className="foIcon" />
         <p>+1 (301) 359 6015</p>
