@@ -9,7 +9,7 @@ export const Contact = ({ setRoute, route, display }) => {
       {display === "desktop" || display === "Htablet" ? (
         <div>
           <img src={apiBG} className="bgImg" />
-          <div className="form">
+          <div className="form fadein">
             <h1 className="conTitle tc">Contact form</h1>
             <form
               action="https://formsubmit.co/a7deb2d964cab03046b716887d0905bd"

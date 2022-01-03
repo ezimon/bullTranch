@@ -10,7 +10,7 @@ export const ContactSmall = () => {
       <form
         action="https://formsubmit.co/a7deb2d964cab03046b716887d0905bd"
         method="POST"
-        className="formsmall conTitle"
+        className="formsmall conTitle fadein"
       >
         <h1>Contact form:</h1>
         <input type="hidden" name="_next" value="https://www.bulltranch.org/" />

@@ -2,7 +2,7 @@ import React from "react";
 import mainlogo from "../assets/logo.png";
 import { Hamburger } from "./Hamburger";
 
-export const Header = ({ setRoute, display }) => {
+export const Header = ({ setRoute, display, route }) => {
   return (
     <div className="header">
       <img
@@ -31,7 +31,7 @@ export const Header = ({ setRoute, display }) => {
           </b>
         </ul>
       ) : (
-        <Hamburger setRoute={setRoute} />
+        <Hamburger setRoute={setRoute} route={route} />
       )}
     </div>
   );

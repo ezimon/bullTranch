@@ -2,14 +2,14 @@ import React from "react";
 import agriBG from "../../assets/bigMenu/agriBGsmall.jpg";
 import { FooterSmall } from "../FooterSmall";
 
-export const AgricultureSmall = ({ display }) => {
+export const AgricultureSmall = ({ display, setRoute }) => {
   return (
     <div>
       <div id="backgroundSmall">
         <img src={agriBG} alt="" className="bgImgHome" />
       </div>
       <br />
-      <div className="aboutWidth">
+      <div className="aboutWidth fadeBG">
         <h1 className="spTitle conTitle">Regenerative Agriculture:</h1>
         <div className="spBodyTxt">
           <div className="subP">
@@ -59,7 +59,7 @@ export const AgricultureSmall = ({ display }) => {
           <br />
         </div>
       </div>
-      <FooterSmall />
+      <FooterSmall setRoute={setRoute} />
     </div>
   );
 };

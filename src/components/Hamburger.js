@@ -3,7 +3,7 @@ import { Modal } from "react-responsive-modal";
 import ham from "../assets/icons/ham.png";
 import "./modal.css";
 
-export const Hamburger = ({ setRoute }) => {
+export const Hamburger = ({ setRoute, route }) => {
   const [open, setOpen] = useState(false);
 
   const onOpenModal = () => setOpen(true);
