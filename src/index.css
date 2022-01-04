@@ -1,11 +1,25 @@
 @font-face {
-  font-family: 'Poppins';
-  src: local('Poppins'), url(./assets/fonts/POPPINS-REGULAR.TTF) format('truetype');
+  font-family: "Poppins";
+  src: local("Poppins"),
+    url(./assets/fonts/POPPINS-REGULAR.TTF) format("truetype");
 }
 
 @font-face {
-  font-family: 'Poppins thin';
-  src: local('Poppins thin'), url(./assets/fonts/POPPINS-EXTRABOLDITALIC.TTF) format('truetype');
+  font-family: "Poppins thin";
+  src: local("Poppins thin"),
+    url(./assets/fonts/POPPINS-EXTRABOLDITALIC.TTF) format("truetype");
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+  position: relative;
 }
 
 /* body {
