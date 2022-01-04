@@ -9,13 +9,13 @@ export const HydroponicSmall = ({ display, setRoute }) => {
         <img src={hydroBG} alt="" className="bgImgHome legible" />
       </div>
       <br />
-      <div className="aboutWidth fadeBG">
+      <div className="aboutWidth">
         <h1 className="spTitle conTitle">Hydroponic System:</h1>
         <div className="spBodyTxt">
           <div className="subP">
             <h2>What is Hydroponics?</h2>
           </div>
-          <p className="fadeBG2">
+          <p>
             Hydroponics is simply the growing of plants without soil.{" "}
             <b>Plants don’t need soil</b>, but they do need the vitamins and
             minerals that soil can provide for them.
@@ -58,7 +58,7 @@ export const HydroponicSmall = ({ display, setRoute }) => {
           <div className="subP">
             <h2>Why Grow with Hydroponics?</h2>
           </div>
-          <p className="fadeBG2">
+          <p>
             Hydroponic gardening is an easy and environmentally sound way to
             grow a wide variety of healthy plants.
             <br />

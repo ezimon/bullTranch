@@ -9,7 +9,7 @@ export const AgricultureSmall = ({ display, setRoute }) => {
         <img src={agriBG} alt="" className="bgImgHome legible" />
       </div>
       <br />
-      <div className="aboutWidth fadeBG">
+      <div className="aboutWidth">
         <h1 className="spTitle conTitle">Regenerative Agriculture:</h1>
         <div className="spBodyTxt">
           <div className="subP">
