@@ -9,7 +9,7 @@ export const LivestockSmall = ({ display, setRoute }) => {
         <img src={liveBG} alt="" className="bgImgHome" />
       </div>
       <br />
-      <div className="aboutWidth fadeBG">
+      <div className="aboutWidth fadeBG legible">
         <h1 className="spTitle conTitle">Organic Livestock:</h1>
         <div className="spBodyTxt">
           <div className="subP">

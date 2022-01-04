@@ -4,7 +4,7 @@ import agriIcon from "../assets/icons/agri.png";
 import liveIcon from "../assets/icons/live.png";
 import hydroIcon from "../assets/icons/hydro.png";
 
-export const SPnavBarr = ({ setInd, prog }) => {
+export const SPnavBarr = ({ setInd, prog, ind }) => {
   return (
     <div className="hoMenuSmall">
       <div className="progContsmall">
@@ -17,25 +17,41 @@ export const SPnavBarr = ({ setInd, prog }) => {
       </div>
       <div className="navbarCont">
         <img
-          className="navbarIcon grow pointer"
+          className={
+            ind === 0
+              ? "slctds navbarIcon grow pointer"
+              : "navbarIcon grow pointer"
+          }
           src={liveIcon}
           alt=""
           onClick={() => setInd(0)}
         />
         <img
-          className="navbarIcon grow pointer"
+          className={
+            ind === 1
+              ? "slctds navbarIcon grow pointer"
+              : "navbarIcon grow pointer"
+          }
           src={agriIcon}
           alt=""
           onClick={() => setInd(1)}
         />
         <img
-          className="navbarIcon grow pointer"
+          className={
+            ind === 2
+              ? "slctds navbarIcon grow pointer"
+              : "navbarIcon grow pointer"
+          }
           src={apiIcon}
           alt=""
           onClick={() => setInd(2)}
         />
         <img
-          className="navbarIcon grow pointer"
+          className={
+            ind === 3 
+              ? "slctds navbarIcon grow pointer"
+              : "navbarIcon grow pointer"
+          }
           src={hydroIcon}
           alt=""
           onClick={() => setInd(3)}

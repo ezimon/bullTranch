@@ -9,7 +9,7 @@ export const HydroponicSmall = ({ display, setRoute }) => {
         <img src={hydroBG} alt="" className="bgImgHome" />
       </div>
       <br />
-      <div className="aboutWidth fadeBG">
+      <div className="aboutWidth fadeBG legible">
         <h1 className="spTitle conTitle">Hydroponic System:</h1>
         <div className="spBodyTxt">
           <div className="subP">

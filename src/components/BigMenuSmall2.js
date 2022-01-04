@@ -5,7 +5,7 @@ import liveBG from "../assets/bigMenu/liveBGsmall2.jpg";
 import hydroBG from "../assets/bigMenu/hydroBGsmall.jpg";
 import { SPnavBarr } from "./SPnavBarr";
 
-export const BigMenuSmall2 = ({ setRoute }) => {
+export const BigMenuSmall2 = ({ setRoute, route }) => {
   const routes = ["livestock", "agriculture", "apiculture", "hydroponic"];
   const [prog, setProg] = useState(0);
   const BgImgs = [liveBG, agriBG, apiBG, hydroBG];
@@ -74,7 +74,7 @@ export const BigMenuSmall2 = ({ setRoute }) => {
             </div>
           </div>
         )}
-        <SPnavBarr setInd={setInd} prog={prog} />
+        <SPnavBarr setInd={setInd} prog={prog} ind={ind} />
       </div>
     </div>
   );

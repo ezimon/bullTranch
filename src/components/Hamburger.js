@@ -24,6 +24,30 @@ export const Hamburger = ({ setRoute, route }) => {
               onClick={() => setRoute("home")}
             >
               Home
+            </li>{" "}
+            <li
+              className="hammenus pointer grow"
+              onClick={() => setRoute("livestock")}
+            >
+              Organic Livestock
+            </li>{" "}
+            <li
+              className="hammenus pointer grow"
+              onClick={() => setRoute("agriculture")}
+            >
+              Regenerative Agriculture
+            </li>{" "}
+            <li
+              className="hammenus pointer grow"
+              onClick={() => setRoute("apiculture")}
+            >
+              Apiculture
+            </li>{" "}
+            <li
+              className="hammenus pointer grow"
+              onClick={() => setRoute("hydroponic")}
+            >
+              Hydroponic System
             </li>
             <li
               className="hammenu pointer grow"
