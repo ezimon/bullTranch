@@ -1,7 +1,7 @@
 {
-  "name": "bulltranch",
+  "homepage": "https://ezimon.github.io/",
+  "name": "bullTranch",
   "version": "0.1.0",
-  "homepage" : "https://bulltranch.org",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.7.1",
