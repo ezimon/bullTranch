@@ -6,7 +6,11 @@ import { FooterSmall } from "./FooterSmall";
 
 export const Footer = ({ setRoute, route, display }) => {
   return (
-    <div className={route === "about" ? "absolute footer" : "footer"}>
+    <div
+      className={
+        route === "contact" || route === "about" ? "absolute footer" : "footer"
+      }
+    >
       <div className="iCont tc">
         <img alt="" src={tel} alt="" className="foIcon" />
         <p>+1 (301) 359 6015</p>
