@@ -847,7 +847,7 @@ iframe {
 
 .ham {
   position: fixed;
-  height: 120%;
+  height: 2.5rem;
   right: 0;
   padding-right: 6%;
   padding-top: 4%;
@@ -860,7 +860,7 @@ iframe {
   list-style-type: none;
   margin-left: -1rem;
   color: white;
-  background-color: #699186;
+  background-color: #ffffff5b;
   border-width: 1.5px;
   border-style: solid;
   border-color: #fff5bc;
@@ -874,7 +874,7 @@ iframe {
   margin-left: -1rem;
   color: white;
   font-weight: lighter;
-  background-color: #699186;
+  background-color: #ffffff21;
   border-width: 1px;
   border-style: solid;
   font-size: 14px;
