@@ -23,7 +23,7 @@ export const FooterSmall = ({ setRoute }) => {
       </div>
       <div className="iContsmall tc">
         <img alt="" src={map} alt="" className="foIcon" />
-        <p>116 BUCK CREEK TRAIL ALVA WY 82711-9600</p>
+        <p>116 BUCK CREEK TRAIL, ALVA, WY 82711-9600</p>
       </div>
     </div>
   );

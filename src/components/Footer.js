@@ -5,9 +5,8 @@ import map from "../assets/icons/map.png";
 import { FooterSmall } from "./FooterSmall";
 
 export const Footer = ({ setRoute, route, display }) => {
-  console.log(display);
   return (
-    <div className="footer">
+    <div className={route === "about" ? "absolute footer" : "footer"}>
       <div className="iCont tc">
         <img alt="" src={tel} alt="" className="foIcon" />
         <p>+1 (301) 359 6015</p>
@@ -18,7 +17,7 @@ export const Footer = ({ setRoute, route, display }) => {
       </div>
       <div className="iCont tc">
         <img alt="" src={map} alt="" className="foIcon" />
-        <p>116 BUCK CREEK TRAIL ALVA WY 82711-9600</p>
+        <p>116 BUCK CREEK TRAIL, ALVA, WY 82711-9600</p>
       </div>
     </div>
   );
