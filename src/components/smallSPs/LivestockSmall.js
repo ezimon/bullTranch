@@ -6,10 +6,10 @@ export const LivestockSmall = ({ display, setRoute }) => {
   return (
     <div>
       <div id="backgroundSmall">
-        <img src={liveBG} alt="" className="bgImgHome" />
+        <img src={liveBG} alt="" className="bgImgHome legible" />
       </div>
       <br />
-      <div className="aboutWidth fadeBG legible">
+      <div className="aboutWidth fadeBG">
         <h1 className="spTitle conTitle">Organic Livestock:</h1>
         <div className="spBodyTxt">
           <div className="subP">

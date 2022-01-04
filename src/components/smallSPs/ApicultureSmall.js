@@ -6,10 +6,10 @@ export const ApicultureSmall = ({ display, setRoute }) => {
   return (
     <div>
       <div id="backgroundSmall">
-        <img src={apiBG} alt="" className="bgImgHome" />
+        <img src={apiBG} alt="" className="bgImgHome legible" />
       </div>
       <br />
-      <div className="aboutWidth fadeBG legible">
+      <div className="aboutWidth fadeBG">
         <h1 className="spTitle conTitle">Apiculture:</h1>
         <div className="spBodyTxt">
           <div className="subP">

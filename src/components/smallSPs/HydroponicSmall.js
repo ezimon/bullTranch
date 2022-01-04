@@ -6,10 +6,10 @@ export const HydroponicSmall = ({ display, setRoute }) => {
   return (
     <div>
       <div id="backgroundSmall">
-        <img src={hydroBG} alt="" className="bgImgHome" />
+        <img src={hydroBG} alt="" className="bgImgHome legible" />
       </div>
       <br />
-      <div className="aboutWidth fadeBG legible">
+      <div className="aboutWidth fadeBG">
         <h1 className="spTitle conTitle">Hydroponic System:</h1>
         <div className="spBodyTxt">
           <div className="subP">
