@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.34e1afe9.chunk.css",
+    "main.js": "/static/js/main.a19d3050.chunk.js",
+    "main.js.map": "/static/js/main.a19d3050.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9374ef3c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9374ef3c.js.map",
+    "static/css/2.6d7c7915.chunk.css": "/static/css/2.6d7c7915.chunk.css",
+    "static/js/2.9832de3c.chunk.js": "/static/js/2.9832de3c.chunk.js",
+    "static/js/2.9832de3c.chunk.js.map": "/static/js/2.9832de3c.chunk.js.map",
+    "static/js/3.9140b507.chunk.js": "/static/js/3.9140b507.chunk.js",
+    "static/js/3.9140b507.chunk.js.map": "/static/js/3.9140b507.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.6d7c7915.chunk.css.map": "/static/css/2.6d7c7915.chunk.css.map",
+    "static/css/main.34e1afe9.chunk.css.map": "/static/css/main.34e1afe9.chunk.css.map",
+    "static/js/2.9832de3c.chunk.js.LICENSE.txt": "/static/js/2.9832de3c.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/POPPINS-REGULAR.8081832f.TTF",
+    "static/media/agri.dc825caf.png": "/static/media/agri.dc825caf.png",
+    "static/media/agriBG.1968354e.png": "/static/media/agriBG.1968354e.png",
+    "static/media/agriBGsmall.7b97a5f7.jpg": "/static/media/agriBGsmall.7b97a5f7.jpg",
+    "static/media/App.css": "/static/media/liveMask.42ffcbd3.png",
+    "static/media/api.9ff81f2c.png": "/static/media/api.9ff81f2c.png",
+    "static/media/apiBG.6200a74b.png": "/static/media/apiBG.6200a74b.png",
+    "static/media/apiBGsmall.f1c553a3.jpg": "/static/media/apiBGsmall.f1c553a3.jpg",
+    "static/media/hydro.7dd93686.png": "/static/media/hydro.7dd93686.png",
+    "static/media/hydroBG.ccab1946.webp": "/static/media/hydroBG.ccab1946.webp",
+    "static/media/hydroBGsmall.019c2c8d.jpg": "/static/media/hydroBGsmall.019c2c8d.jpg",
+    "static/media/live.50db7507.png": "/static/media/live.50db7507.png",
+    "static/media/liveBGsmall2.9f4a58dd.jpg": "/static/media/liveBGsmall2.9f4a58dd.jpg",
+    "static/media/logo.10a28e33.png": "/static/media/logo.10a28e33.png",
+    "static/media/mouse.0491165b.png": "/static/media/mouse.0491165b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9374ef3c.js",
+    "static/css/2.6d7c7915.chunk.css",
+    "static/js/2.9832de3c.chunk.js",
+    "static/css/main.34e1afe9.chunk.css",
+    "static/js/main.a19d3050.chunk.js"
+  ]
+}
