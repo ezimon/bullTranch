@@ -10,7 +10,7 @@ export const ApicultureSmall = ({ display, setRoute }) => {
       </div>
       <br />
       <div className="aboutWidth">
-        <h1 className="spTitle conTitle">Apiculture:</h1>
+        <h1 className="spTitle conTitle">Apiculture</h1>
         <div className="spBodyTxt">
           <div className="subP">
             <h2>Our Mission:</h2>
@@ -26,9 +26,9 @@ export const ApicultureSmall = ({ display, setRoute }) => {
           <br />
           <div className="subP">
             <h2>The importance of Bees</h2>
-            <h4>It Helps the Environment</h4>
           </div>
           <p>
+            <b> It Helps the Environment </b> <br />
             Bees are pollinators which transfer pollen from one flower to
             another. This fertilizes plants so that they can grow and reproduce.
             Not only are bees <b>critical to agriculture and growing food</b>,

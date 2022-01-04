@@ -1,14 +1,15 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Footer } from "./Footer";
 import apiBG from "../assets/bigMenu/liveBG.jpg";
 import { ContactSmall } from "./ContactSmall";
+import { FooterSmall } from "./FooterSmall";
 
 export const Contact = ({ setRoute, route, display }) => {
   return (
     <div>
       {display === "desktop" || display === "Htablet" ? (
         <div>
-          <img src={apiBG} className="bgImg" />
+          <img src={apiBG} className="bgImg" alt="" />
           <div className="form fadein">
             <h1 className="conTitle tc">Contact form</h1>
             <form
@@ -61,13 +62,19 @@ export const Contact = ({ setRoute, route, display }) => {
               </div>
             </form>
           </div>
+          <Footer
+            display={display}
+            className="absolute"
+            setRoute={setRoute}
+            route={route}
+          />
         </div>
       ) : (
         <div>
           <ContactSmall />
+          <FooterSmall />
         </div>
       )}
-      <Footer display={display} className="absolute" setRoute={setRoute} route={route} />
     </div>
   );
 };

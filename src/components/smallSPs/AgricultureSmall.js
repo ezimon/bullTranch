@@ -10,22 +10,27 @@ export const AgricultureSmall = ({ display, setRoute }) => {
       </div>
       <br />
       <div className="aboutWidth">
-        <h1 className="spTitle conTitle">Regenerative Agriculture:</h1>
+        <h1 className="spTitle conTitle">Regenerative Agriculture</h1>
         <div className="spBodyTxt">
           <div className="subP">
-            <h2>The Ultimate Goal is:</h2>
-            <h4>To Conserve and Rehabilitate the Land as it is Farmed.</h4>
+            <h4>
+              The ultimate goal is to conserve and rehabilitate the land as it
+              is farmed.{" "}
+            </h4>
           </div>
           <p>
             Regenerative agriculture leads to <b>healthy soil</b>, capable of
             producing high quality, nutrient dense food while simultaneously
             improving, rather than degrading land, and ultimately leading to
-            productive farms and healthy communities and economies. We use{" "}
-            <b>planting methods</b> that take as little moisture out of the soil
-            as possible. Then, when the crops come off, the cattle immediately
-            go on the fields. By doing this, nutrients and biology are infused
-            back into our fields. Not only does the land benefit, this also{" "}
-            <b>provides nutrients</b> for the cattle using crop aftermath.
+            productive farms and healthy communities and economies.
+            <br />
+            <br />
+            We use <b>planting methods</b> that take as little moisture out of
+            the soil as possible. Then, when the crops come off, the cattle
+            immediately go on the fields. By doing this, nutrients and biology
+            are infused back into our fields. Not only does the land benefit,
+            this also <b>provides nutrients</b> for the cattle using crop
+            aftermath.
           </p>
           <br />
           <div className="subP">

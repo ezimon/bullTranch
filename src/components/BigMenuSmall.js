@@ -1,5 +1,4 @@
 import React from "react";
-import liveBG from "../assets/bigMenu/liveBG.jpg";
 
 export const BigMenuSmall = ({ setRoute }) => {
   return (
@@ -12,16 +11,32 @@ export const BigMenuSmall = ({ setRoute }) => {
         <b>What we do:</b>
       </h1>
       <div className="width-70">
-        <div onClick={() => setRoute("hydroponic")} className="smallmenutab grow pointer" id="hydrow">
+        <div
+          onClick={() => setRoute("hydroponic")}
+          className="smallmenutab grow pointer"
+          id="hydrow"
+        >
           <h2 className="pointer">Hydroponic System</h2>
         </div>
-        <div onClick={() => setRoute("livestock")} className="smallmenutab grow pointer" id="livew">
+        <div
+          onClick={() => setRoute("livestock")}
+          className="smallmenutab grow pointer"
+          id="livew"
+        >
           <h2 className="pointer">Organic Livestock</h2>
         </div>
-        <div onClick={() => setRoute("apiculture")} className="smallmenutab grow pointer" id="apiw">
+        <div
+          onClick={() => setRoute("apiculture")}
+          className="smallmenutab grow pointer"
+          id="apiw"
+        >
           <h2 className="pointer">Apiculture</h2>
         </div>
-        <div onClick={() => setRoute("agriculture")} className="smallmenutab grow pointer" id="agriw">
+        <div
+          onClick={() => setRoute("agriculture")}
+          className="smallmenutab grow pointer"
+          id="agriw"
+        >
           <h2 className="pointer">Regenerative Agriculture</h2>
         </div>
       </div>

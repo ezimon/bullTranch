@@ -3,7 +3,6 @@ import apiBG from "../assets/bigMenu/hydroBG.webp";
 import scroll from "../assets/mouse.png";
 import { Footer } from "./Footer";
 import { SpNav } from "./SpNav";
-import { SpNavSmall } from "./SpNavSmall";
 import { HydroponicSmall } from "./smallSPs/HydroponicSmall";
 
 export const Hydroponic = ({ setRoute, route, display }) => {
@@ -15,9 +14,9 @@ export const Hydroponic = ({ setRoute, route, display }) => {
         <div className="special">
           <SpNav setRoute={setRoute} route={route} />
           <div className="shadowImg">
-            <img alt="" alt="" src={apiBG} className="bgImg" />
+            <img alt="" src={apiBG} className="bgImg" />
             <div className="Cont">
-              <h1 className="spTitle ">Hydroponic System:</h1>
+              <h1 className="spTitle ">Hydroponic System</h1>
               <p className="paragraph subP">
                 We use this unique method of farming that eliminates the use of
                 soil entirely as a growing environment. Instead of the use of
@@ -126,6 +125,11 @@ export const Hydroponic = ({ setRoute, route, display }) => {
                     The increased control over growing conditions makes it
                     easier to provide the best possible environment for plants,
                     leading to better quality produce and higher yields
+                  </li>
+                  <br />
+                  <li>
+                    Less labor is required than growing in soil because no
+                    digging or weeding is required
                   </li>
                 </ul>
                 <br />

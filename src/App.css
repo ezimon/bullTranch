@@ -371,7 +371,9 @@ iframe {
 
 .absolute {
   position: absolute;
-  bottom: 0;
+  bottom: 0rem;
+  top: 95%;
+  background: none !important;
 }
 
 .relative {
@@ -521,6 +523,7 @@ iframe {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   margin-bottom: 5rem;
   margin-top: 3rem;
+
 }
 
 .flex-container {
@@ -859,8 +862,9 @@ iframe {
   margin-left: -1rem;
   color: white;
   background-color: #699186;
-  border-width: 1px;
+  border-width: 1.5px;
   border-style: solid;
+  border-color: #fff5bc;
 }
 
 .hammenus {

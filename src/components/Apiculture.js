@@ -3,7 +3,6 @@ import apiBG from "../assets/bigMenu/apiBG.png";
 import scroll from "../assets/mouse.png";
 import { Footer } from "./Footer";
 import { SpNav } from "./SpNav";
-import { SpNavSmall } from "./SpNavSmall";
 import { ApicultureSmall } from "./smallSPs/ApicultureSmall";
 
 export const Apiculture = ({ setRoute, route, display }) => {
@@ -17,7 +16,7 @@ export const Apiculture = ({ setRoute, route, display }) => {
           <div className="shadowImg">
             <img alt="" alt="" src={apiBG} className="bgImg" />
             <div className="Cont">
-              <h1 className="spTitle ">Apiculture:</h1>
+              <h1 className="spTitle ">Apiculture</h1>
               <p className="paragraph subP">
                 We promote honey bee health and sustainability. Continuously
                 improve beekeeping tools, techniques, and practices. And always
@@ -44,9 +43,7 @@ export const Apiculture = ({ setRoute, route, display }) => {
             <div className="width-70">
               <h1 className="subtitle">The importance of Bees</h1>
               <p className="paragraph">
-                <b>It Helps the Environment</b>
-                <br />
-                <br />
+                <b>It Helps the Environment</b> <br />
                 Bees are pollinators which transfer pollen from one flower to
                 another. This fertilizes plants so that they can grow and
                 reproduce. Not only are bees{" "}

@@ -1,6 +1,7 @@
 import React from "react";
 import liveBG from "../assets/bigMenu/agriBG.png";
 import { Footer } from "./Footer";
+import { FooterSmall } from "./FooterSmall";
 
 export const About = ({ setRoute, route, display }) => {
   return (
@@ -46,7 +47,16 @@ export const About = ({ setRoute, route, display }) => {
             <br />
           </p>
         </div>
-        <Footer display={display} display={display} setRoute={setRoute} route={route} />
+        {display === "desktop" || display === "Htablet" ? (
+          <Footer
+            display={display}
+            display={display}
+            setRoute={setRoute}
+            route={route}
+          />
+        ) : (
+          <FooterSmall />
+        )}
       </div>
     </div>
   );

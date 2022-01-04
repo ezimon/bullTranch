@@ -10,7 +10,7 @@ export const HydroponicSmall = ({ display, setRoute }) => {
       </div>
       <br />
       <div className="aboutWidth">
-        <h1 className="spTitle conTitle">Hydroponic System:</h1>
+        <h1 className="spTitle conTitle">Hydroponic System</h1>
         <div className="spBodyTxt">
           <div className="subP">
             <h2>What is Hydroponics?</h2>
@@ -105,6 +105,11 @@ export const HydroponicSmall = ({ display, setRoute }) => {
                 The increased control over growing conditions makes it easier to
                 provide the best possible environment for plants, leading to
                 better quality produce and higher yields
+              </li>
+              <br />
+              <li>
+                Less labor is required than growing in soil because no digging
+                or weeding is required
               </li>
             </ul>
           </p>

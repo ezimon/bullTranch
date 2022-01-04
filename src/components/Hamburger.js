@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Modal } from "react-responsive-modal";
 import ham from "../assets/icons/ham.png";
 import "./modal.css";
 
-export const Hamburger = ({ setRoute, route }) => {
+export const Hamburger = ({ setRoute }) => {
   const [open, setOpen] = useState(false);
 
-  const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
   return (
     <div>

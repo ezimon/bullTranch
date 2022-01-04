@@ -3,7 +3,6 @@ import apiBG from "../assets/bigMenu/liveBG.jpg";
 import scroll from "../assets/mouse.png";
 import { Footer } from "./Footer";
 import { SpNav } from "./SpNav";
-import { SpNavSmall } from "./SpNavSmall";
 import { LivestockSmall } from "./smallSPs/LivestockSmall";
 
 export const Livestock = ({ setRoute, route, display }) => {
@@ -15,9 +14,9 @@ export const Livestock = ({ setRoute, route, display }) => {
         <div className="special">
           <SpNav setRoute={setRoute} route={route} />
           <div className="shadowImg">
-            <img alt="" alt="" src={apiBG} className="bgImg" />
+            <img alt="" src={apiBG} className="bgImg" />
             <div className="Cont">
-              <h1 className="spTitle ">Organic Livestock:</h1>
+              <h1 className="spTitle ">Organic Livestock</h1>
               <p className="paragraph subP">
                 We focus on pasture-based, encouraging biodiversity, healthy
                 soil, and humane treatment of animals. Our priorities are
@@ -29,7 +28,9 @@ export const Livestock = ({ setRoute, route, display }) => {
           </div>
           <div className="spBody">
             <div className="width-70">
-              <h1 className="subtitle">What is Organic Livestock</h1>
+              <h1 className="subtitle">
+                What is organic livestock management?
+              </h1>
               <p className="paragraph">
                 Organic livestock are managed differently than conventional
                 livestock. With an emphasis on pasture and restrictions on the
@@ -41,7 +42,7 @@ export const Livestock = ({ setRoute, route, display }) => {
             </div>
             <br />
             <div className="width-70">
-              <h1 className="subtitle">Benefits of Organic Livestock</h1>
+              <h1 className="subtitle">Benefits of Organic Livestock:</h1>
               <p className="paragraph">
                 <ul>
                   <li>
@@ -84,9 +85,30 @@ export const Livestock = ({ setRoute, route, display }) => {
                   </li>
                 </ul>
                 <br />
-                <br />
-                <br />
               </p>
+              <h1 className="subtitle">Why does it matter?</h1>
+              <p className="paragraph">
+                Factory farming is a top contributor to climate change. On
+                factory farms, thousands of animals are raised in confinement.
+                Forest might be cleared to make space for feedlots, and that
+                many animals quickly eliminate any pasture or ground cover,
+                exposing soil to wind and water erosion. Manure collects in
+                pits, releasing methane and nitrous oxide, potent greenhouse
+                gases. <br />
+                <br />
+                Factory-farmed animals are fed grain to encourage rapid weight
+                gain. But cows in particular aren’t built to digest grain,
+                leading to increased use of antibiotics and the threat of
+                “superbug” outbreaks. Monocultures of corn and soy are required
+                to keep up with feed demand, creating further emissions and
+                worsening land degradation. Organic livestock management is
+                pasture-based, encouraging biodiversity, healthy soil, and
+                humane treatment of animals. Animal waste becomes a tool for
+                fertility, not a hazard. The animals improve the health of the
+                land. Of all farming practices, pasture-based livestock
+                operations have the most potential to sequester carbon. too.
+              </p>
+              <br />
               <hr />
             </div>
             <Footer setRoute={setRoute} route={route} />
