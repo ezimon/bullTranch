@@ -221,6 +221,7 @@
 
 #Mapi:hover {
   background-image: url(./assets/bigMenu/apiMask.png);
+  background-size: cover;
   -webkit-animation: shadow-drop-center 0.4s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -228,6 +229,7 @@
 
 #Mlive:hover {
   background-image: url(./assets/bigMenu/liveMask.png);
+  background-size: cover;
   -webkit-animation: shadow-drop-center 0.4s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -235,6 +237,7 @@
 
 #Magri:hover {
   background-image: url(./assets/bigMenu/agriMask.png);
+  background-size: cover;
   -webkit-animation: shadow-drop-center 0.4s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -242,6 +245,7 @@
 
 #Mhydro:hover {
   background-image: url(./assets/bigMenu/hydroMask.png);
+  background-size: cover;
   -webkit-animation: shadow-drop-center 0.4s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -713,6 +717,7 @@ iframe {
   padding: 0 20% 0 20%;
   font-size: 1.4vw;
   letter-spacing: 0.11rem;
+  line-height: 21px;
 }
 
 .carouselPsmall {
