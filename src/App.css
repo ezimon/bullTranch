@@ -223,28 +223,28 @@
   background-image: url(./assets/bigMenu/apiMask.png);
   background-size: cover;
   animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: fadeIn 0.4s linear;
+  /* animation: fadeIn 0.4s linear; */
 }
 
 #Mlive:hover {
   background-image: url(./assets/bigMenu/liveMask.png);
   background-size: cover;
   animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: fadeIn 0.4s linear;
+  /* animation: fadeIn 0.4s linear; */
 }
 
 #Magri:hover {
   background-image: url(./assets/bigMenu/agriMask.png);
   background-size: cover;
   animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: fadeIn 0.4s linear;
+  /* animation: fadeIn 0.4s linear; */
 }
 
 #Mhydro:hover {
   background-image: url(./assets/bigMenu/hydroMask.png);
   background-size: cover;
   animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: fadeIn 0.4s linear;
+  /* animation: fadeIn 0.4s linear; */
 }
 
 #hoverId:hover {
