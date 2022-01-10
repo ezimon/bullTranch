@@ -1,21 +1,27 @@
 name: Autodeploy
-
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches:
+      - main
 jobs:
-  build:
-    name: Autodeploy on master
+  Pull-from-server:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-    - name: Pull repo
-      run:
-        git pull origin main
+      - uses: actions/checkout@v2
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2.3.1
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: 'placeholder-so-we-dont-get-erros'
 
-    - name: Build Page
-      run: npm run build
+      - name: Adding Known Hosts
+        run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+      - name: Pull via ssh
+        uses: nerd4ever/ssh-action@0.1.0
+        with:
+          command: |
+            cd /home/demaster/dotfiles
+            git pull origin main
+          host: ${{ secrets.SSH_HOST }}
+          user: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY}}
