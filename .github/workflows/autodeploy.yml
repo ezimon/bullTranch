@@ -1,0 +1,21 @@
+name: Autodeploy
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    name: Autodeploy on master
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Pull repo
+      run:
+        git pull origin main
+
+    - name: Build Page
+      run: npm run build
