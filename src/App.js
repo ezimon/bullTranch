@@ -84,12 +84,6 @@ function App() {
 
   return (
     <div className="App">
-      {(route === "contact" || route === "about") ===
-      (display === "phone" || display === "Vtablet" ? true : false) ? (
-        <div className="shadowImg">
-          <img src={apiBG} alt="" className="bgImgRes" />
-        </div>
-      ) : null}
       <div className="black"></div>
       <Header setRoute={setRoute} display={display} route={route} />
       {/* <p style={{ float: "right", padding: "1rem" }}>display: {display}</p> */}
