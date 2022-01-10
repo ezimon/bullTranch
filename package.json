@@ -1,6 +1,6 @@
 {
-  "homepage": "https://bulltranch.org/",
-  "name": "bullTranch",
+  "name": "bulltranch",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
