@@ -33,7 +33,7 @@ export const BigMenu2 = ({ setRoute, display }) => {
   useEffect(() => {
     setP(ps[ind]);
     seth1(h1s[ind]);
-    setProg(0);
+    setProg(50);
 
     const interval = setInterval(() => {
       setProg((prog) => prog + seconds / (seconds * 10));
@@ -74,7 +74,7 @@ export const BigMenu2 = ({ setRoute, display }) => {
         )}
 
         <div className="menu">
-          <div className="menuItem" id={ind === 0 ? "hoverId" : "Mlive"}>
+          <div className="menuItem pointer" id={ind === 0 ? "hoverId" : "Mlive"}>
             <div className="menuTCont">
               <h1 className="Mtitle2 pointer tb" onClick={() => setInd(0)}>
                 Organic Livestock
@@ -92,7 +92,7 @@ export const BigMenu2 = ({ setRoute, display }) => {
             ) : null}
           </div>
 
-          <div className="menuItem" id={ind === 1 ? "hoverId" : "Magri"}>
+          <div className="menuItem pointer" id={ind === 1 ? "hoverId" : "Magri"}>
             <div className="menuTCont">
               <h1 className="Mtitle2 pointer tb" onClick={() => setInd(1)}>
                 Regenerative Agriculture
@@ -109,7 +109,7 @@ export const BigMenu2 = ({ setRoute, display }) => {
               </div>
             ) : null}
           </div>
-          <div className="menuItem" id={ind === 2 ? "hoverId" : "Mapi"}>
+          <div className="menuItem pointer" id={ind === 2 ? "hoverId" : "Mapi"}>
             <div className="menuTCont">
               <h1 className="Mtitle2 pointer tb" onClick={() => setInd(2)}>
                 Apiculture
@@ -127,7 +127,7 @@ export const BigMenu2 = ({ setRoute, display }) => {
             ) : null}
           </div>
 
-          <div className="menuItem" id={ind === 3 ? "hoverId" : "Mhydro"}>
+          <div className="menuItem pointer" id={ind === 3 ? "hoverId" : "Mhydro"}>
             <div className="menuTCont">
               <h1 className="Mtitle2 pointer tb" onClick={() => setInd(3)}>
                 Hydroponic System

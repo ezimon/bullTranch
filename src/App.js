@@ -86,7 +86,6 @@ function App() {
     <div className="App">
       <div className="black"></div>
       <Header setRoute={setRoute} display={display} route={route} />
-      {/* <p style={{ float: "right", padding: "1rem" }}>display: {display}</p> */}
       {component}
     </div>
   );

@@ -195,7 +195,7 @@
   position: absolute;
   margin: 0;
   width: 100%;
-  z-index: -3;
+  /* z-index: -3; */
 }
 
 .menuCont {
@@ -223,28 +223,28 @@
   background-image: url(./assets/bigMenu/apiMask.png);
   background-size: cover;
   animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  /* animation: fadeIn 0.4s linear; */
+  animation: fadeIn 0.4s linear;
 }
 
 #Mlive:hover {
   background-image: url(./assets/bigMenu/liveMask.png);
   background-size: cover;
   animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  /* animation: fadeIn 0.4s linear; */
+  animation: fadeIn 0.4s linear;
 }
 
 #Magri:hover {
   background-image: url(./assets/bigMenu/agriMask.png);
   background-size: cover;
   animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  /* animation: fadeIn 0.4s linear; */
+  animation: fadeIn 0.4s linear;
 }
 
 #Mhydro:hover {
   background-image: url(./assets/bigMenu/hydroMask.png);
   background-size: cover;
   animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  /* animation: fadeIn 0.4s linear; */
+  animation: fadeIn 0.4s linear;
 }
 
 #hoverId:hover {
@@ -253,8 +253,17 @@
   animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.menuItem:hover {
-  color: black;
+.menuItem {
+  height: 100%;
+  width: 25%;
+  border-style: solid;
+  border-width: 0 0.3px 0 0;
+  border-color: rgba(191, 191, 191, 0.863);
+  transition: background-image 0.7s;
+}
+
+.menuitem:hover {
+  z-index: -1;
 }
 
 .pddnTop {
@@ -270,7 +279,6 @@
 
 .fadeBG {
   text-shadow: 0px 0px 20px #474747;
-  /* background-image: linear-gradient(to bottom, #ffffff00, #000000bf), none; */
 }
 
 .legible {
@@ -311,7 +319,6 @@
   left: 0;
   right: 0;
   z-index: 100;
-  /* border-top: solid lavender 1.5px; */
 }
 
 .navbarCont {
@@ -586,15 +593,6 @@ iframe {
   background-color: #ffffff;
 }
 
-.menuItem {
-  height: 100%;
-  width: 25%;
-  border-style: solid;
-  border-width: 0 0.3px 0 0;
-  border-color: rgba(191, 191, 191, 0.863);
-  transition: background-image 0.7s;
-}
-
 .Mtitle {
   position: relative;
   color: whitesmoke;
@@ -611,7 +609,7 @@ iframe {
 
 .Mtitle2 {
   position: relative;
-  bottom: -80%;
+  bottom: -85%;
   color: whitesmoke;
   font-size: 2vw;
   filter: drop-shadow(10px 4px 4px rgba(28, 43, 25, 0.849));
