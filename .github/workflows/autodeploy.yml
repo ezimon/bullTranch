@@ -19,10 +19,8 @@ jobs:
       - name: Pull via ssh
         uses: nerd4ever/ssh-action@0.1.0
         with:
-          command: |
-            cd /var/www/w8t/bulltranch
-            git pull origin main
-            npm run build
+          command:
+            cd /var/www/w8t/bullTranch && git pull origin main && npm run build || exit
           host: ${{ secrets.SSH_HOST }}
           user: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY}}
