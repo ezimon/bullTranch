@@ -33,7 +33,7 @@ export const BigMenu2 = ({ setRoute, display }) => {
   useEffect(() => {
     setP(ps[ind]);
     seth1(h1s[ind]);
-    setProg(50);
+    setProg(0);
 
     const interval = setInterval(() => {
       setProg((prog) => prog + seconds / (seconds * 10));
