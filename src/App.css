@@ -701,6 +701,8 @@ iframe {
 }
 
 .carouselTitle {
+  position: relative;
+  z-index: 500;
   font-size: 3.5vw;
   padding: 0.001rem 0 0.001rem 0;
 }
@@ -710,12 +712,16 @@ iframe {
 }
 
 .carouselP {
+  position: relative;
+  z-index: 500;
   padding: 0 20% 0 20%;
   font-size: 1.4vw;
   letter-spacing: 0.11rem;
 }
 
 .carouselPsmall {
+  position: relative;
+  z-index: 500;
   font-size: 1.1rem;
   letter-spacing: 0.05rem;
   line-height: 22px;
@@ -761,6 +767,8 @@ iframe {
 }
 
 .btnLearn {
+  position: relative;
+  z-index: 500;
   background-color: #699186;
   border-width: 1px;
   border-style: solid;

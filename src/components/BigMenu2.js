@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import apiBG from "../assets/bigMenu/apiBG.png";
-import agriBG from "../assets/bigMenu/agriBG.png";
+import apiBG from "../assets/bigMenu/apiBG.jpg";
+import agriBG from "../assets/bigMenu/agriBG.jpg";
 import liveBG from "../assets/bigMenu/liveBG.jpg";
 import hydroBG from "../assets/bigMenu/hydroBG.webp";
 
@@ -74,7 +74,10 @@ export const BigMenu2 = ({ setRoute, display }) => {
         )}
 
         <div className="menu">
-          <div className="menuItem pointer" id={ind === 0 ? "hoverId" : "Mlive"}>
+          <div
+            className="menuItem pointer"
+            id={ind === 0 ? "hoverId" : "Mlive"}
+          >
             <div className="menuTCont">
               <h1 className="Mtitle2 pointer tb" onClick={() => setInd(0)}>
                 Organic Livestock
@@ -92,7 +95,10 @@ export const BigMenu2 = ({ setRoute, display }) => {
             ) : null}
           </div>
 
-          <div className="menuItem pointer" id={ind === 1 ? "hoverId" : "Magri"}>
+          <div
+            className="menuItem pointer"
+            id={ind === 1 ? "hoverId" : "Magri"}
+          >
             <div className="menuTCont">
               <h1 className="Mtitle2 pointer tb" onClick={() => setInd(1)}>
                 Regenerative Agriculture
@@ -127,7 +133,10 @@ export const BigMenu2 = ({ setRoute, display }) => {
             ) : null}
           </div>
 
-          <div className="menuItem pointer" id={ind === 3 ? "hoverId" : "Mhydro"}>
+          <div
+            className="menuItem pointer"
+            id={ind === 3 ? "hoverId" : "Mhydro"}
+          >
             <div className="menuTCont">
               <h1 className="Mtitle2 pointer tb" onClick={() => setInd(3)}>
                 Hydroponic System

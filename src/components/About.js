@@ -1,5 +1,5 @@
 import React from "react";
-import liveBG from "../assets/bigMenu/agriBG.png";
+import liveBG from "../assets/bigMenu/agriBG.jpg";
 import { Footer } from "./Footer";
 import { FooterSmall } from "./FooterSmall";
 

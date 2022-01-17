@@ -1,5 +1,5 @@
 import React from "react";
-import apiBG from "../assets/bigMenu/apiBG.png";
+import apiBG from "../assets/bigMenu/apiBG.jpg";
 import scroll from "../assets/mouse.png";
 import { Footer } from "./Footer";
 import { SpNav } from "./SpNav";

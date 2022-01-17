@@ -1,6 +1,6 @@
 import React from "react";
-import apiBG from "../assets/bigMenu/apiBG.png";
-import agriBG from "../assets/bigMenu/agriBG.png";
+import apiBG from "../assets/bigMenu/apiBG.jpg";
+import agriBG from "../assets/bigMenu/agriBG.jpg";
 import liveBG from "../assets/bigMenu/liveBG.jpg";
 import hydroBG from "../assets/bigMenu/hydroBG.webp";
 

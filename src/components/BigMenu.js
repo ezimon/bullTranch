@@ -41,15 +41,14 @@ export const BigMenu = ({ setRoute }) => {
           <div className="menuTCont">
             <h1 className="Mtitle">Organic Livestock</h1>
 
-          <div className="progCont">
-            <div
-              className="progBar"
-              style={{
-                width: barW,
-              }}
-            ></div>
-          </div>
-
+            <div className="progCont">
+              <div
+                className="progBar"
+                style={{
+                  width: barW,
+                }}
+              ></div>
+            </div>
           </div>
         </div>
       </div>
