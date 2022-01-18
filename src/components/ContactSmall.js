@@ -1,8 +1,12 @@
 import React from "react";
+import liveBG2 from "../assets/bigMenu/liveBGsmall.jpg";
 
 export const ContactSmall = () => {
   return (
     <div className="tc">
+    <div id="backgroundSmall">
+        <img src={liveBG2} alt="" className="bgImgHome legible" />
+      </div>
       <br />
       <br />
       <br />
