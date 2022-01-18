@@ -2,13 +2,18 @@ import React from "react";
 import liveBG from "../assets/bigMenu/agriBG.jpg";
 import { Footer } from "./Footer";
 import { FooterSmall } from "./FooterSmall";
+import liveBG2 from "../assets/bigMenu/agriBGsmall.jpg";
 
 export const About = ({ setRoute, route, display }) => {
   return (
     <div>
       {display === "desktop" || display === "Htablet" ? (
         <img alt="" src={liveBG} className="bgImg" />
-      ) : null}
+      ) : 
+        <div id="backgroundSmall">
+          <img src={liveBG2} alt="" className="bgImgHome legible" />
+        </div>
+      }
       <div className="tc">
         <br />
         <br />
