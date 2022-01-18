@@ -5,7 +5,7 @@ export const ContactSmall = () => {
   return (
     <div className="tc">
     <div id="backgroundSmall">
-        <img src={liveBG2} alt="" className="bgImgHome legible" />
+        <img src={liveBG2} alt="" className="bgImgHome" />
       </div>
       <br />
       <br />
