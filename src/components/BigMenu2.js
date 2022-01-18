@@ -28,7 +28,7 @@ export const BigMenu2 = ({ setRoute, display }) => {
   const [p, setP] = useState();
   const [h1, seth1] = useState();
 
-  const seconds = 8;
+  const seconds = 5.5;
 
   useEffect(() => {
     setP(ps[ind]);
